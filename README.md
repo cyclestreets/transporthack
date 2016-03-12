@@ -1,5 +1,7 @@
 # Reducing car dependency in the Lake District
 
+Site updated every 5 minutes at: http://transporthack.cyclestreets.net/
+
 This repo contains code and data for the [TransportHack](http://www.landor.co.uk/smartertravel/2016/hackathon.php) event.
 
 For documentation see the repo's [wiki](https://github.com/cyclestreets/transporthack/wiki).
