@@ -8,6 +8,8 @@
                 "name": "(Name not known)",
                 "osmTags": {
                     "highway": "bus_stop"
+                
+                    
                 }
             },
             "geometry": {
