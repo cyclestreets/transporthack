@@ -8,15 +8,56 @@ output:
       in_header: header.html
 ---
 
+<!--Don't edit the html page directly - use (R)Markdown!-->
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 # Welcome to the CycleStreets.net Transport Hack
 
+All the code and data behind this hack is open access, and can be found on the team's [GitHub repo](https://github.com/cyclestreets/transporthack). If you have a GitHub account, feel free to fork/contribute to the project, for example by [editing this frontpage](https://github.com/cyclestreets/transporthack/edit/master/public_html/index.Rmd)!
+
 Here you can find some of the outputs for the CycleStreets.net team for the
 [TransportHack](http://www.landor.co.uk/smartertravel/2016/hackathon.php) event.
 
-Here are some of the outputs:
+- A [map of likely routes](map-cyclenet.html) that cyclists represented in the Lake District [origin-destination dataset](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv) took while visiting the area. 
 
-- A [map of likely routes](map-cyclenet.html) that cyclists represented in the Lake District [origin-destination dataset](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv) took while visiting the area.
+- A [map of the most common car journeys](map-car-od.html) into the Lake District based on processing the same dataset.
+
+## Figures and code
+
+A picture can tell a thousand words. The figures and code snippets showed below help show what we've been up to!
+
+A key challange was to process the origin-destination dataset of visitor travel demand so it could be displayed in a meaningful way on a map. The first stage was to extract the data from the proprietary .xls format and put it into an open source software friendly [csv file, which also displays natively on GitHub](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv). This was done with the following code:
+
+```{r, eval=FALSE}
+f = "data/LD%20origin-destination%20summary.xls"
+odf = readxl::read_excel(f)
+write.csv(odf, "data/od-summary.csv")
+```
+
+A sample of this data is provided below:
+
+```{r, echo=FALSE}
+odf = read.csv("../data/od-summary.csv")
+knitr::kable(odf[2:5, c(3, 4, 5, 13)], row.names = F, caption = "Sample data from the Lake District visitor demand survey")
+```
+
+Then we used the open source transport planning add-on to R, [**stplanr**](http://www.r-bloggers.com/stplanr-0-1-1/), to convert the flows into the formal `SpatialLinesDataFrame` class. This work was done in the [flowgen.R](https://github.com/cyclestreets/transporthack/blob/master/R/flowgen.R) script file:
+
+```{r, eval=FALSE}
+cents = spTransform(cents, CRS("+init=epsg:4326"))
+f = od2line(odf, cents)
+```
+
+Google was used to geocode the place names, which were not provided.
+
+A snapshot of the kind of visualisation provided by this is illustrated below.
+
+```{r, echo=FALSE}
+knitr::include_graphics("figures/map-car-od.png")
+```
+
+
+
+

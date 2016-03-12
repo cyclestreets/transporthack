@@ -38,4 +38,8 @@ plot(centsp)
 library(mapview)
 mapview(centsp)
 
+
 geojson_write(centsp, file = "geodata/uk-origins.geojson")
+
+
+

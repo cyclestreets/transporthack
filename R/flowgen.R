@@ -31,5 +31,7 @@ mapview(f, lwd = f$CarJourneys / mean(f$CarJourneys))
 mapview(f, lwd = f$CycleJourneys / mean(f$CycleTarvellers))
 
 geojson_write(f, file = "data/flows.geojson")
+file.rename("data/flows.geojson", "geodata/flows.geojson")
 
 # Identify largest destinations
+

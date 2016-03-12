@@ -34,17 +34,14 @@ library(stplanr)
 # odf = readxl::read_excel("data/LD%20origin-destination%20summary.xls")
 # write.csv(odf, "data/od-summary.csv")
 odf = read.csv("data/od-summary.csv")
-cents = unique(odf$StartDestName)
-cents2 = unique(odf$EndDestName)
-summary(cents %in% cents2)
-cents_all = unique(c(cents, cents2))
-cents_all
 
-latlong = ggmap::geocode(cents_all)
-plot(latlong) # many outside the uk!
-outside_uk = latlong$lon < -10 | latlong$lon > 3
-cents_all[outside_uk]
+cents = geojson_read("geodata/locations.geojson", what = "sp")
+plot(cents)
+summary(cents$Name %in% odf$StartDestName)
+summary(cents$Name %in% odf$EndDestName)
 
-cents = cbind(cents_all, latlong)
-cents = cents[!is.na(cents$cents_all),]
-latlong2 
+cents$Name[cents$Name %in% odf$EndDestName]
+cents$Name[!cents$Name %in% odf$EndDestName]
+
+odf$EndDestName %in% cents$Name
+
