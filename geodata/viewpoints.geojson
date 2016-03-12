@@ -1,0 +1,604 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "451030",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.275942,
+                    54.237282
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "454120",
+                "name": "Scafell Pike",
+                "osmTags": {
+                    "ele": "978",
+                    "name": "Scafell Pike",
+                    "natural": "peak",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.211552,
+                    54.454235
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "458567",
+                "name": "Sulber Gate",
+                "osmTags": {
+                    "is_in": "Craven, North Yorkshire",
+                    "name": "Sulber Gate",
+                    "place": "locality",
+                    "source": "local_knowledge",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.344697,
+                    54.153885
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "460359",
+                "name": "Scalestones Point",
+                "osmTags": {
+                    "created_by": "JOSM",
+                    "name": "Scalestones Point",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.833064,
+                    54.084629
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "461663",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "created_by": "JOSM",
+                    "note": "View over Coniston and Coniston Water",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.085674,
+                    54.370659
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "495888",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "created_by": "JOSM",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.098787,
+                    54.452221
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "753437",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.941509,
+                    54.320728
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "813965",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.064394,
+                    54.455128
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1178768",
+                "name": "Jenkyn's Crag",
+                "osmTags": {
+                    "name": "Jenkyn's Crag",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.951875,
+                    54.417557
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1180258",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.749643,
+                    54.324905
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1231897",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.082826,
+                    54.435871
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1311754",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.920762,
+                    54.380505
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1355647",
+                "name": "Hampsfell Hospice",
+                "osmTags": {
+                    "alt_name": "The Hospice",
+                    "amenity": "shelter",
+                    "building": "yes",
+                    "name": "Hampsfell Hospice",
+                    "tourism": "viewpoint",
+                    "wheelchair": "no"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.922494,
+                    54.206585
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1758703",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.14136,
+                    54.393612
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1784250",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.010619,
+                    54.456123
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1813119",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.826666,
+                    54.177952
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1813553",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.841454,
+                    54.189358
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1893327",
+                "name": "Helsington",
+                "osmTags": {
+                    "name": "Helsington",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.787509,
+                    54.293602
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1952303",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.021897,
+                    54.278141
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2062612",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.221624,
+                    54.462196
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2138696",
+                "name": "Mushroom",
+                "osmTags": {
+                    "designation": "360 panorama",
+                    "name": "Mushroom",
+                    "source": "LK",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.790782,
+                    54.32082
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2152813",
+                "name": "The Helm",
+                "osmTags": {
+                    "name": "The Helm",
+                    "natural": "peak",
+                    "source": "Bing",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.72263,
+                    54.292019
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2169107",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "description": "Views of Morcambe Bay and the Lake District",
+                    "source": "GPS, photo and recent walk",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.76813,
+                    54.162788
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2221296",
+                "name": "View point looking north west",
+                "osmTags": {
+                    "name": "View point looking north west",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.003686,
+                    54.417332
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2294362",
+                "name": "Tom Ghyll Waterfalls",
+                "osmTags": {
+                    "name": "Tom Ghyll Waterfalls",
+                    "source": "Rec by WvD 2013-07-19",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.040973,
+                    54.390263
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2397269",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.969236,
+                    54.27301
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2521983",
+                "name": "View over mine",
+                "osmTags": {
+                    "name": "View over mine",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.044612,
+                    54.434486
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2596344",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.872845,
+                    54.251781
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2660478",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.707211,
+                    54.19846
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2686338",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.257705,
+                    54.210297
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2860028",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.338055,
+                    54.466686
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2918328",
+                "name": "Warton Upper Crag",
+                "osmTags": {
+                    "climbing": "crag",
+                    "climbing:rock": "limestone",
+                    "name": "Warton Upper Crag",
+                    "natural": "cliff",
+                    "note": "This is probably the best viewpoint on the crag. However it is extremely exposed and should be approached with caution. Children should be accompanied.",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.777517,
+                    54.148476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "3023802",
+                "name": "Dragoneye-Place",
+                "osmTags": {
+                    "name": "Dragoneye-Place",
+                    "note": "MorroWind-Place",
+                    "tourism": "viewpoint"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.909567,
+                    54.357525
+                ]
+            }
+        }
+    ]
+}

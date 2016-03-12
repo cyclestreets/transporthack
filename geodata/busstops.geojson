@@ -1,0 +1,3444 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "581651",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                
+                    
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.832619,
+                    54.25235
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "795331",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "bay": "yes",
+                    "highway": "bus_stop",
+                    "shelter": "yes"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.560114,
+                    54.182842
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "923952",
+                "name": "National Trust car park (N bound);National Trust car park (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "National Trust car park (N bound);National Trust car park (S bound)",
+                    "naptan:AtcoCode": "090002113361;090002111393",
+                    "naptan:Bearing": "NW;S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "National Trust car park (N bound);National Trust car park (S bound)",
+                    "naptan:Indicator": "opp;at",
+                    "naptan:Landmark": "entrance to car park;entrance to Seatoller National Trust car park",
+                    "naptan:NaptanCode": "cumadgaj;cumadapj",
+                    "naptan:Street": "B5289",
+                    "naptan:verified": "yes",
+                    "shelter_type": "public_transport",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.167042,
+                    54.513466
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "923955",
+                "name": "Honister Youth Hostel / Slate Quarry (E)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Honister Youth Hostel / Slate Quarry (E)",
+                    "naptan:AtcoCode": "090002113743",
+                    "naptan:Bearing": "E",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Honister Youth Hostel / Slate Quarry (E)",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Youth Hostel",
+                    "naptan:NaptanCode": "cumadgat",
+                    "naptan:Street": "B5289",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.197193,
+                    54.511677
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "924310",
+                "name": "Wythburn Church (N bound)",
+                "osmTags": {
+                    "bench": "no",
+                    "covered": "no",
+                    "highway": "bus_stop",
+                    "name": "Wythburn Church (N bound)",
+                    "naptan:AtcoCode": "090002503479",
+                    "naptan:Bearing": "N",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Wythburn Church (N bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Thirlmere",
+                    "naptan:NaptanCode": "cumagpgt",
+                    "naptan:Street": "A591",
+                    "naptan:verified": "no",
+                    "shelter": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.045089,
+                    54.512066
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "924836",
+                "name": "Sikemeadow (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Sikemeadow (N bound)",
+                    "naptan:AtcoCode": "090010024297",
+                    "naptan:Bearing": "N",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Sikemeadow (N bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "turning circle",
+                    "naptan:NaptanCode": "cumdtawj",
+                    "naptan:PlusbusZoneRef": "BAROW",
+                    "naptan:Street": "Sikemeadow",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.230064,
+                    54.140266
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "924841",
+                "name": "Harbour Inn",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Harbour Inn",
+                    "naptan:AtcoCode": "090010024303",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Harbour Inn",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Cavendish Dock Road junction",
+                    "naptan:NaptanCode": "cumdtdag",
+                    "naptan:PlusbusZoneRef": "BAROW",
+                    "naptan:Street": "St. Georges Square",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.221214,
+                    54.107925
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "924874",
+                "name": "Harrel Lane / Hollow Lane",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Harrel Lane / Hollow Lane",
+                    "naptan:AtcoCode": "090010032658",
+                    "naptan:Bearing": "W",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Harrel Lane / Hollow Lane",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Junction",
+                    "naptan:NaptanCode": "cumamgta",
+                    "naptan:PlusbusZoneRef": "BAROW",
+                    "naptan:Street": "Harrel Lane",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.207279,
+                    54.123734
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "924879",
+                "name": "Dowdales School",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "IN",
+                    "name": "Dowdales School",
+                    "naptan:AtcoCode": "090010033997",
+                    "naptan:Bearing": "N",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Dowdale School",
+                    "naptan:Indicator": "in",
+                    "naptan:Landmark": "Dowdale School Grounds",
+                    "naptan:NaptanCode": "cumdpdtw",
+                    "naptan:Street": "Nelson Street",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.182884,
+                    54.158527
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "924881",
+                "name": "Stainton Drive",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Stainton Drive",
+                    "naptan:AtcoCode": "090010034310",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Stainton Drive",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "junction",
+                    "naptan:NaptanCode": "cumdtdgd",
+                    "naptan:Street": "Newton Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.184532,
+                    54.147068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "924884",
+                "name": "Ireleth Road / Broughton Close",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Ireleth Road / Broughton Close",
+                    "naptan:AtcoCode": "090010340578",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Ireleth Road / Broughton Close",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Driftwood",
+                    "naptan:NaptanCode": "cumamgwg",
+                    "naptan:Street": "Ireleth Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.200715,
+                    54.188831
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "925683",
+                "name": "Ulpha Road End (W bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Ulpha Road End (W bound)",
+                    "naptan:AtcoCode": "090050203284",
+                    "naptan:Bearing": "W",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Ulpha Road End (W bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "post box",
+                    "naptan:NaptanCode": "cumawdta",
+                    "naptan:Street": "A595",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.230587,
+                    54.28323
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "925892",
+                "name": "St Peters Church",
+                "osmTags": {
+                    "bench": "no",
+                    "covered": "yes",
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "St Peters Church",
+                    "naptan:AtcoCode": "090074041043",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "St Peters Church",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "St Peters Church",
+                    "naptan:NaptanCode": "cumawtwt",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "shelter": "yes",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.495593,
+                    54.513077
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "925928",
+                "name": "Sheep Dip",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Sheep Dip",
+                    "naptan:AtcoCode": "090074181034",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Sheep Dip",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "the Old Cottage",
+                    "naptan:NaptanCode": "cumdagja",
+                    "naptan:Street": "Sheep Dip",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.420874,
+                    54.479523
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "925969",
+                "name": "Robin Hood Farm at the green",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Robin Hood Farm at the green",
+                    "naptan:AtcoCode": "090074321019",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Robin Hood Farm at the green",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "the green",
+                    "naptan:NaptanCode": "cumdamdm",
+                    "naptan:Street": "Beechgrove",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.314345,
+                    54.498924
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "925973",
+                "name": "Kaber Road End",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Kaber Road End",
+                    "naptan:AtcoCode": "090074323612",
+                    "naptan:Bearing": "NE",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Road End (N bound)",
+                    "naptan:Indicator": "n/bound",
+                    "naptan:Landmark": "Kaber Road End",
+                    "naptan:NaptanCode": "cumdamgj",
+                    "naptan:Street": "A685",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.324433,
+                    54.496712
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926015",
+                "name": "The Black Bull (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "The Black Bull (S bound)",
+                    "naptan:AtcoCode": "090074501024",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "The Black Bull (S bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Black Bull PH",
+                    "naptan:NaptanCode": "cumdatmd",
+                    "naptan:Street": "The Green",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.349275,
+                    54.455708
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926017",
+                "name": "The Square",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "The Square",
+                    "naptan:AtcoCode": "090074531068",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "The Square",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Surgery",
+                    "naptan:NaptanCode": "cumdatpt",
+                    "naptan:Street": "B6260",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.583769,
+                    54.468178
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926104",
+                "name": "Public hall",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Public hall",
+                    "naptan:AtcoCode": "090074571036",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Public hall",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Public Hall",
+                    "naptan:NaptanCode": "cumdgdag",
+                    "naptan:Street": "Main Street",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.455264,
+                    54.440956
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926106",
+                "name": "Ravenstonedale School",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Ravenstonedale School",
+                    "naptan:AtcoCode": "090074574213",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Ravenstonedale School",
+                    "naptan:Indicator": "On",
+                    "naptan:Landmark": "River Bank",
+                    "naptan:NaptanCode": "cumdpwdm",
+                    "naptan:Street": "No Name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.428928,
+                    54.432167
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926126",
+                "name": "Post Office",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Post Office",
+                    "naptan:AtcoCode": "090074621029",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Post Office",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Soulby Bridge and phone box",
+                    "naptan:NaptanCode": "cumdgjat",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.388172,
+                    54.493961
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926133",
+                "name": "Old Tebay (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Old Tebay (S bound)",
+                    "naptan:AtcoCode": "090074644245",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Old Tebay (S bound)",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Clock Garage Estate",
+                    "naptan:NaptanCode": "cumdpwta",
+                    "naptan:Street": "B6260",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.593503,
+                    54.439217
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926151",
+                "name": "Railway Station Car Park",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "IN",
+                    "name": "Railway Station Car Park",
+                    "naptan:AtcoCode": "090074701509",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Railway Station Car Park",
+                    "naptan:Indicator": "in",
+                    "naptan:Landmark": "Car park at Kirkby Stephen rail station",
+                    "naptan:NaptanCode": "cumdpapt",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.367832,
+                    54.454376
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926152",
+                "name": "Winton Court",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Winton Court",
+                    "naptan:AtcoCode": "090074711021",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Winton Court",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Winton Court",
+                    "naptan:NaptanCode": "cumdgjtw",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.335582,
+                    54.490196
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926160",
+                "name": "Bay View (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Bay View (N bound)",
+                    "naptan:AtcoCode": "090079010633",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Bay View (N bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Bay View",
+                    "naptan:NaptanCode": "cumdgmat",
+                    "naptan:Street": "Coast Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.144156,
+                    54.096443
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926161",
+                "name": "Goadsbarrow (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Goadsbarrow (N bound)",
+                    "naptan:AtcoCode": "090079010650",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Goadsbarrow (N bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Beach Mount",
+                    "naptan:NaptanCode": "cumdgmaw",
+                    "naptan:Street": "Coast Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.130929,
+                    54.104893
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926170",
+                "name": "Post Office Row at layby",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Post Office Row at layby",
+                    "naptan:AtcoCode": "090079011184",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Post Office Row at layby",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "layby",
+                    "naptan:NaptanCode": "cumdgmgm",
+                    "naptan:Street": "Post Office Row",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.141389,
+                    54.127666
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926171",
+                "name": "Aldingham Road End",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Aldingham Road End",
+                    "naptan:AtcoCode": "090079011191",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Aldingham Road End",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "crossroads at road to Aldingham",
+                    "naptan:NaptanCode": "cumdgmgw",
+                    "naptan:Street": "B5087",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.101372,
+                    54.131733
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926172",
+                "name": "Fishermans Arms (E bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Fishermans Arms (E bound)",
+                    "naptan:AtcoCode": "090079011197",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Fishermans Arms (E bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Fishermans Arms",
+                    "naptan:NaptanCode": "cumdgmja",
+                    "naptan:Street": "B5087",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.091633,
+                    54.140858
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926178",
+                "name": "Church Road / Kirkhead View",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Church Road / Kirkhead View",
+                    "naptan:AtcoCode": "090079023162",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Church Road / Kirkhead View",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "junction with Kirkhead View",
+                    "naptan:NaptanCode": "cumdgmtp",
+                    "naptan:Street": "Church Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.940874,
+                    54.181152
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926191",
+                "name": "Carr Bank Garden Centre",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "BY",
+                    "name": "Carr Bank Garden Centre",
+                    "naptan:AtcoCode": "090079061440",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Carr Bank Garden Centre",
+                    "naptan:Indicator": "by",
+                    "naptan:Landmark": "Garden Centre",
+                    "naptan:NaptanCode": "cumdgpgd",
+                    "naptan:Street": "B5282 Sandside Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.812348,
+                    54.207787
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926195",
+                "name": "Village Notice Board",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Village Notice Board",
+                    "naptan:AtcoCode": "090079071188",
+                    "naptan:Bearing": "E",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Village Notice Board",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Telephone Box and post box",
+                    "naptan:NaptanCode": "cumdgpjp",
+                    "naptan:Street": "A5092",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.119973,
+                    54.253845
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926199",
+                "name": "Blawith Church (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Blawith Church (N bound)",
+                    "naptan:AtcoCode": "090079073508",
+                    "naptan:Bearing": "N",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Newbiggin House (N bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Smithy Beck Bridge",
+                    "naptan:NaptanCode": "cumdgpmg",
+                    "naptan:Street": "Main Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.094815,
+                    54.285778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926212",
+                "name": "Railway Station entrance",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Railway Station entrance",
+                    "naptan:AtcoCode": "090079093640",
+                    "naptan:Bearing": "NE",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Railway Station entrance",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Railway Station",
+                    "naptan:NaptanCode": "cumdgpwt",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.766521,
+                    54.355171
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926215",
+                "name": "Green Dragon Farm (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Green Dragon Farm (S bound)",
+                    "naptan:AtcoCode": "090079102364",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Green Dragon Farm (S bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Lockwoods Garage",
+                    "naptan:NaptanCode": "cumdgtam",
+                    "naptan:Street": "A6070",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.722436,
+                    54.178616
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926220",
+                "name": "Cark Station",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Cark Station",
+                    "naptan:AtcoCode": "090079114216",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Cark Station",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Railway Station",
+                    "naptan:NaptanCode": "cumdpwdw",
+                    "naptan:Street": "Station Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.974654,
+                    54.177605
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926224",
+                "name": "Lowfield House",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Lowfield House",
+                    "naptan:AtcoCode": "090079121071",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Lowfield House",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Church",
+                    "naptan:NaptanCode": "cumdgtdm",
+                    "naptan:Street": "A683",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.577762,
+                    54.211117
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926232",
+                "name": "Firbank Old School",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Firbank Old School",
+                    "naptan:AtcoCode": "090079133779",
+                    "naptan:Bearing": "NW",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Firbank Old School",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Firbank Old School",
+                    "naptan:NaptanCode": "cumdgtgt",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.957033,
+                    54.350529
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926244",
+                "name": "Holly How Youth Hostel",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Holly How Youth Hostel",
+                    "naptan:AtcoCode": "090079154222",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Holly Howe Youth Hostel",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Crossroads",
+                    "naptan:NaptanCode": "cumdpwgw",
+                    "naptan:Street": "Barratt Croft",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.073211,
+                    54.372833
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926247",
+                "name": "Village",
+                "osmTags": {
+                    "fixme": "Name not checked",
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Village",
+                    "naptan:AtcoCode": "090079183962",
+                    "naptan:Bearing": "E",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Village",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Primary School",
+                    "naptan:NaptanCode": "cumdmwmt",
+                    "naptan:Street": "Main Street",
+                    "naptan:verified": "partial",
+                    "note": "Postion moved to surveyed bus stop.  highway=bus_stop set.  BusStopType wrong - should be MKD.",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.45555,
+                    54.27829
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926249",
+                "name": "Lower Hawthwaite",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Lower Hawthwaite",
+                    "naptan:AtcoCode": "090079201172",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Lower Hawthwaite",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Lower Hawthwaite",
+                    "naptan:NaptanCode": "cumdgwjm",
+                    "naptan:Street": "A593",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.202162,
+                    54.291965
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926250",
+                "name": "Cockley Beck Farm",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Cockley Beck Farm",
+                    "naptan:AtcoCode": "090079202248",
+                    "naptan:Bearing": "N",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Cockley Beck Farm",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Cockley Beck Farm",
+                    "naptan:NaptanCode": "cumdgwjw",
+                    "naptan:Street": "Hardknott Pass",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.162054,
+                    54.404591
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926252",
+                "name": "Wreaks End Farm (E bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Wreaks End Farm (E bound)",
+                    "naptan:AtcoCode": "090079203544",
+                    "naptan:Bearing": "E",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Wreaks End Farm (E bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Wreaks End Farm",
+                    "naptan:NaptanCode": "cumdgwmt",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.19798,
+                    54.269642
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926257",
+                "name": "Greenodd (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Greenodd (N bound)",
+                    "naptan:AtcoCode": "090079213505",
+                    "naptan:Bearing": "NW",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Texaco Garage (E bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Texaco Garage",
+                    "naptan:NaptanCode": "cumdgwta",
+                    "naptan:Street": "A5092",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.055245,
+                    54.235058
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926259",
+                "name": "Garsdale Station Road End",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Garsdale Station Road End",
+                    "naptan:AtcoCode": "090079241599",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Station Road End",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Garsdale Station Road End",
+                    "naptan:NaptanCode": "cumdjada",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.328528,
+                    54.321125
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926266",
+                "name": "Lyndene Drive (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Lyndene Drive (S bound)",
+                    "naptan:AtcoCode": "090079251958",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Lyndene Drive (S bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "junction with Lyndene Drive",
+                    "naptan:NaptanCode": "cumdjagw",
+                    "naptan:Street": "B5277 Lindale Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.896149,
+                    54.207497
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926269",
+                "name": "Hazelwood Court (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Hazelwood Court (N bound)",
+                    "naptan:AtcoCode": "090079252320",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Hazelwood Court (N bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Hazelwood Court",
+                    "naptan:NaptanCode": "cumdjajw",
+                    "naptan:Street": "B5277 Lindale Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.894013,
+                    54.202301
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926271",
+                "name": "Kirkhead Road (W bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Kirkhead Road (W bound)",
+                    "naptan:AtcoCode": "090079252515",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Kirkhead Road (W bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "no. 25",
+                    "naptan:NaptanCode": "cumdjamd",
+                    "naptan:Street": "Kirkhead Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.92976,
+                    54.174778
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926273",
+                "name": "Primary School",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Primary School",
+                    "naptan:AtcoCode": "090079261084",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Primary School",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Grayrigg Primary School",
+                    "naptan:NaptanCode": "cumdjapm",
+                    "naptan:Street": "A685",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.650887,
+                    54.367939
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926276",
+                "name": "The Coach House",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "The Coach House",
+                    "naptan:AtcoCode": "090079271470",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "The Coach House",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Junction with A590(T) by the coach House",
+                    "naptan:NaptanCode": "cumdjatj",
+                    "naptan:Street": "B5278",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.014241,
+                    54.249409
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926281",
+                "name": "Backbarrow by-pass Southbound",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Backbarrow by-pass Southbound",
+                    "naptan:AtcoCode": "090079274050",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Backbarrow by-pass Southbound",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Layby",
+                    "naptan:NaptanCode": "cumdpjad",
+                    "naptan:Street": "A590",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.988647,
+                    54.25354
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926286",
+                "name": "The Outgate Inn (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "The Outgate Inn (S bound)",
+                    "naptan:AtcoCode": "090079283275",
+                    "naptan:Bearing": "S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "The Outgate Inn (S bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "The Outgate Inn",
+                    "naptan:NaptanCode": "cumdjdgj",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.99438,
+                    54.389629
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926290",
+                "name": "Moor Top (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Moor Top (S bound)",
+                    "naptan:AtcoCode": "090079283783",
+                    "naptan:Bearing": "S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Moor Top (S bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "cattle grid",
+                    "naptan:NaptanCode": "cumdjdgw",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.012426,
+                    54.359444
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926291",
+                "name": "High Cross",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "High Cross",
+                    "naptan:AtcoCode": "090079284223",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "High Cross",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Summer Hill Country House",
+                    "naptan:NaptanCode": "cumdpwja",
+                    "naptan:Street": "No Name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.029252,
+                    54.378769
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926301",
+                "name": "Hope & Anchor",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Hope & Anchor",
+                    "naptan:AtcoCode": "090079321137",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Hope & Anchor",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Market Square",
+                    "naptan:NaptanCode": "cumdjdpt",
+                    "naptan:Street": "Market Street",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.972141,
+                    54.174328
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926302",
+                "name": "Engine Inn (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Engine Inn (N bound)",
+                    "naptan:AtcoCode": "090079321278",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Engine Inn (N bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Engine Inn",
+                    "naptan:NaptanCode": "cumdjdpw",
+                    "naptan:Street": "Laurel Bank",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.977428,
+                    54.180225
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926308",
+                "name": "Junction for Ings Village (E bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Junction for Ings Village (E bound)",
+                    "naptan:AtcoCode": "090079341934",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Junction for Ings Village (E bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Junction for Ings Village",
+                    "naptan:NaptanCode": "cumdjdwm",
+                    "naptan:Street": "A591",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.85754,
+                    54.38118
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926388",
+                "name": "Sandylands",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Sandylands",
+                    "naptan:AtcoCode": "090079360960",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Sandylands",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "junction with Grasmere Cresent",
+                    "naptan:NaptanCode": "cumdjpag",
+                    "naptan:Street": "Ullswater Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.723434,
+                    54.331394
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926422",
+                "name": "Hayclose Road at Kendal Park Road",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Hayclose Road at Kendal Park Road",
+                    "naptan:AtcoCode": "090079363990",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Hayclose Road at Kendal Park Road",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "number 3",
+                    "naptan:NaptanCode": "cumdpdtd",
+                    "naptan:Street": "Hayclose Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.726275,
+                    54.311073
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926425",
+                "name": "Souter Gate bridge",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Souter Gate bridge",
+                    "naptan:AtcoCode": "090079390599",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Souter Gate bridge",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Souter Gate bridge",
+                    "naptan:NaptanCode": "cumdjtjm",
+                    "naptan:Street": "A595",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.185967,
+                    54.222916
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926430",
+                "name": "Burlington School (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Burlington School (S bound)",
+                    "naptan:AtcoCode": "090079393217",
+                    "naptan:Bearing": "SW",
+                    "naptan:CommonName": "Burlington School (S bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "School",
+                    "naptan:NaptanCode": "cumdjtmj",
+                    "naptan:Street": "School Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.178282,
+                    54.234245
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926432",
+                "name": "Marshside (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Marshside (N bound)",
+                    "naptan:AtcoCode": "090079394320",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Marshside (N bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "number 1",
+                    "naptan:NaptanCode": "cumdtdjp",
+                    "naptan:Street": "A595",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.176726,
+                    54.241028
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926439",
+                "name": "Winterseeds (S bound)",
+                "osmTags": {
+                    "bench": "no",
+                    "covered": "no",
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Winterseeds (S bound)",
+                    "naptan:AtcoCode": "090079410732",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Winterseeds (S bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Winterseeds",
+                    "naptan:NaptanCode": "cumdjtpw",
+                    "naptan:Street": "A591",
+                    "naptan:verified": "yes",
+                    "shelter": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.024878,
+                    54.470139
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926453",
+                "name": "The Kirkstone Pass Inn (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "The Kirkstone Pass Inn (S bound)",
+                    "naptan:AtcoCode": "090079411648",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "The Kirkstone Pass Inn (S bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "The Kirkstone Inn at Kirkstone Pass",
+                    "naptan:NaptanCode": "cumdjwdm",
+                    "naptan:Street": "A592",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.925134,
+                    54.46476
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926475",
+                "name": "Town Head by Spring",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Town Head by Spring",
+                    "naptan:AtcoCode": "090079412978",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Town Head by Spring",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Troutbeck Town Head",
+                    "naptan:NaptanCode": "cumdjwmp",
+                    "naptan:Street": "A592",
+                    "naptan:verified": "yes",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.903644,
+                    54.427616
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926478",
+                "name": "The Britannia Inn (E bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "The Britannia Inn (E bound)",
+                    "naptan:AtcoCode": "090079413287",
+                    "naptan:Bearing": "E",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "The Britannia Inn (E bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Britannia Inn",
+                    "naptan:NaptanCode": "cumdjwpa",
+                    "naptan:Street": "Main Street",
+                    "naptan:verified": "yes",
+                    "seats": "3",
+                    "shelter": "yes",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.037693,
+                    54.434212
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926479",
+                "name": "Foulstep Crossroads (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Foulstep Crossroads (N bound)",
+                    "naptan:AtcoCode": "090079413288",
+                    "naptan:Bearing": "NE",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Foulstep Crossroads (N bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "crossroads opp Neaum Hurst",
+                    "naptan:NaptanCode": "cumdjwpd",
+                    "naptan:Street": "A593",
+                    "naptan:verified": "yes",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.011191,
+                    54.42284
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926488",
+                "name": "White Moss Common (E bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "White Moss Common (E bound)",
+                    "naptan:AtcoCode": "090079414229",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "White Moss Common (E bound)",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Coach House",
+                    "naptan:NaptanCode": "cumdpwjw",
+                    "naptan:PlusbusZoneRef": "WMER",
+                    "naptan:Street": "A591",
+                    "naptan:verified": "yes",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.006562,
+                    54.450027
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926495",
+                "name": "East / North slip road to roundabout",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "ON",
+                    "name": "East / North slip road to roundabout",
+                    "naptan:AtcoCode": "090079431832",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "East / North slip road to roundabout",
+                    "naptan:Indicator": "on",
+                    "naptan:Landmark": "slip road to Roundabout",
+                    "naptan:NaptanCode": "cumdmadg",
+                    "naptan:Street": "A590(T)",
+                    "naptan:verified": "yes",
+                    "operator": "Stagecoach",
+                    "shelter": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.765025,
+                    54.27544
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926497",
+                "name": "A590 Slip Road",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "A590 Slip Road",
+                    "naptan:AtcoCode": "090079434214",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "A590 Slip Road",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Bellhill Farm Cottages",
+                    "naptan:NaptanCode": "cumdpwdp",
+                    "naptan:Street": "A590",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.780058,
+                    54.26313
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926503",
+                "name": "A5092 near Old Spade Forge",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "A5092 near Old Spade Forge",
+                    "naptan:AtcoCode": "090079454454",
+                    "naptan:Bearing": "NW",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "A5092 near Old Spade Forge",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Near Old Spade Forge",
+                    "naptan:Street": "A5092",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.079054,
+                    54.258129
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926504",
+                "name": "Jubilee Lane End",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Jubilee Lane End",
+                    "naptan:AtcoCode": "090079461093",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Jubilee Lane End",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "junction",
+                    "naptan:NaptanCode": "cumdmagd",
+                    "naptan:Street": "A65",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.674636,
+                    54.220276
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926505",
+                "name": "School House Road End",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "School House Road End",
+                    "naptan:AtcoCode": "090079491070",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "School House Road End",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "junction with road to School House",
+                    "naptan:NaptanCode": "cumdmajg",
+                    "naptan:Street": "A683",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.579499,
+                    54.268394
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926507",
+                "name": "Ackenthwaite (E bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Ackenthwaite (E bound)",
+                    "naptan:AtcoCode": "090079501717",
+                    "naptan:Bearing": "E",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Ackenthwaite (E bound)",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "junction with B6384",
+                    "naptan:NaptanCode": "cumdmajt",
+                    "naptan:Street": "B6385",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.763587,
+                    54.228382
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926513",
+                "name": "Top of Church Street (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Top of Church Street (S bound)",
+                    "naptan:AtcoCode": "090079502678",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Top of Church Street (S bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "no.s 54 to 56",
+                    "naptan:NaptanCode": "cumdmapa",
+                    "naptan:Street": "A6 Church Street",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.772991,
+                    54.23251
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926514",
+                "name": "The Square (E bound)",
+                "osmTags": {
+                    "bench": "no",
+                    "covered": "yes",
+                    "highway": "bus_stop",
+                    "name": "The Square (E bound)",
+                    "naptan:AtcoCode": "090079503600",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "The Square (E bound)",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Market Cross",
+                    "naptan:NaptanCode": "cumdmapm",
+                    "naptan:Street": "The Square",
+                    "naptan:verified": "no",
+                    "shelter": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.771387,
+                    54.227051
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926515",
+                "name": "The Green (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "The Green (S bound)",
+                    "naptan:AtcoCode": "090079510116",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "The Green (S bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "St Marks Church",
+                    "naptan:NaptanCode": "cumdmapt",
+                    "naptan:Street": "The Green",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.737771,
+                    54.296398
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926520",
+                "name": "New Hutton junction (W bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "New Hutton junction (W bound)",
+                    "naptan:AtcoCode": "090079531701",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "New Hutton junction (W bound)",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Ginn Cottage",
+                    "naptan:NaptanCode": "cumdmawd",
+                    "naptan:Street": "A684",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.672275,
+                    54.323181
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926521",
+                "name": "Woodside",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Woodside",
+                    "naptan:AtcoCode": "090079532890",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Woodside",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Woodside",
+                    "naptan:NaptanCode": "cumdmawg",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.681672,
+                    54.325237
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926526",
+                "name": "Bank Terrace (W bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Bank Terrace (W bound)",
+                    "naptan:AtcoCode": "090079560639",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Bank Terrace (W bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Bank Terrace",
+                    "naptan:NaptanCode": "cumdmdja",
+                    "naptan:Street": "A590",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.14142,
+                    54.174397
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926536",
+                "name": "A65 Roundabout (N)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "A65 Roundabout (N)",
+                    "naptan:AtcoCode": "090079573939",
+                    "naptan:Bearing": "NE",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "A65 Roundabout (N)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Junction A65 A6070",
+                    "naptan:NaptanCode": "cumdpdmw",
+                    "naptan:Street": "A65",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.712136,
+                    54.235519
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926537",
+                "name": "Woodside Road",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Woodside Road",
+                    "naptan:AtcoCode": "090079580972",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Woodside Road",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Woodside Close",
+                    "naptan:NaptanCode": "cumdmdpd",
+                    "naptan:Street": "Woodside Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.706284,
+                    54.259354
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926543",
+                "name": "Information Centre (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Information Centre (S bound)",
+                    "naptan:AtcoCode": "090079594411",
+                    "naptan:Bearing": "S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Information Centre (S bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Grizedale Information Centre",
+                    "naptan:NaptanCode": "cumdtjdw",
+                    "naptan:Notes": "Stop created for X30 - runs beyond Grizedale -  down to Haverthwaite.",
+                    "naptan:Street": "No Name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.023102,
+                    54.340878
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926545",
+                "name": "Force Forge Farm (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Force Forge Farm (S bound)",
+                    "naptan:AtcoCode": "090079594413",
+                    "naptan:Bearing": "S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Force Forge Farm (S bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Force Forge Farm",
+                    "naptan:NaptanCode": "cumdtjgd",
+                    "naptan:Notes": "Created for X30 - was on one side of road only.",
+                    "naptan:Street": "No Name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.025482,
+                    54.30468
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926550",
+                "name": "Long Lane opp Thornsbank",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Long Lane opp Thornsbank",
+                    "naptan:AtcoCode": "090079613317",
+                    "naptan:Bearing": "SW",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Long Lane opp Thornsbank",
+                    "naptan:Indicator": "w/bound",
+                    "naptan:Landmark": "opp Thornsbank",
+                    "naptan:NaptanCode": "cumdmgaj",
+                    "naptan:Street": "A683",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.516942,
+                    54.323467
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926552",
+                "name": "Westmorland General Hospital",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Westmorland General Hospital",
+                    "naptan:AtcoCode": "090079650924",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Westmorland General Hospital",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Hospital Entrance",
+                    "naptan:NaptanCode": "cumdmgdj",
+                    "naptan:Street": "A65 Burton Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.731779,
+                    54.305981
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926554",
+                "name": "Swan Hotel",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Swan Hotel",
+                    "naptan:AtcoCode": "090079661133",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Swan Hotel",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Swan Hotel",
+                    "naptan:NaptanCode": "cumdmgdw",
+                    "naptan:Street": "A590",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.970963,
+                    54.26852
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926557",
+                "name": "Fell Foot Park (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Fell Foot Park (N bound)",
+                    "naptan:AtcoCode": "090079662278",
+                    "naptan:Bearing": "N",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Fell Foot Park (N bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Entrance to Fell Foot Park",
+                    "naptan:NaptanCode": "cumdmgjm",
+                    "naptan:Street": "A592",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.949786,
+                    54.276447
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926558",
+                "name": "Crossroads (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Crossroads (N bound)",
+                    "naptan:AtcoCode": "090079663784",
+                    "naptan:Bearing": "N",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Crossroads (N bound)",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Black Beck Hall Cottage",
+                    "naptan:NaptanCode": "cumdmgjt",
+                    "naptan:Street": "A590(T)",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.928525,
+                    54.244785
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926560",
+                "name": "Stavely Road End (E bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Stavely Road End (E bound)",
+                    "naptan:AtcoCode": "090079664122",
+                    "naptan:Bearing": "E",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Stavely Road End (E bound)",
+                    "naptan:Indicator": "At",
+                    "naptan:Landmark": "Bridge",
+                    "naptan:NaptanCode": "cumdpmja",
+                    "naptan:Street": "Crook Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.819018,
+                    54.372311
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926562",
+                "name": "Church House Inn (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Church House Inn (N bound)",
+                    "naptan:AtcoCode": "090079673510",
+                    "naptan:Bearing": "NE",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Church House Inn (N bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Church House Inn",
+                    "naptan:NaptanCode": "cumdmgma",
+                    "naptan:Street": "Main Road",
+                    "naptan:verified": "yes",
+                    "shelter": "yes",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.102359,
+                    54.338593
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926603",
+                "name": "Three Bridges Railway Bridge (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Three Bridges Railway Bridge (S bound)",
+                    "naptan:AtcoCode": "090079684311",
+                    "naptan:Bearing": "S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Three Bridges Railway Bridge (S bound)",
+                    "naptan:Indicator": "s/bound",
+                    "naptan:Landmark": "Dykelands",
+                    "naptan:NaptanCode": "cumdtdgj",
+                    "naptan:Street": "Three Bridges",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.109445,
+                    54.190487
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926605",
+                "name": "G W Waite Factory (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "G W Waite Factory (N bound)",
+                    "naptan:AtcoCode": "090079684323",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "G W Waite Factory (N bound)",
+                    "naptan:Indicator": "n/bound",
+                    "naptan:Landmark": "number 18",
+                    "naptan:NaptanCode": "cumdtdma",
+                    "naptan:Street": "North Lonsdale Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.074421,
+                    54.193832
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926611",
+                "name": "Farmers Arms (W bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "ON",
+                    "name": "Farmers Arms (W bound)",
+                    "naptan:AtcoCode": "090079701182",
+                    "naptan:Bearing": "W",
+                    "naptan:CommonName": "Farmers Arms (W bound)",
+                    "naptan:Indicator": "on",
+                    "naptan:Landmark": "green opp Farmers Arms",
+                    "naptan:NaptanCode": "cumdmjpa",
+                    "naptan:Street": "Long Lane",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.151852,
+                    54.142387
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926612",
+                "name": "The Swan Hotel (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "The Swan Hotel (S bound)",
+                    "naptan:AtcoCode": "090079701185",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "The Swan Hotel (S bound)",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Farthingstone Barn opposite Swan Public House",
+                    "naptan:NaptanCode": "cumdmjpd",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.129668,
+                    54.153027
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926615",
+                "name": "Oxleys Factory (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Oxleys Factory (N bound)",
+                    "naptan:AtcoCode": "090079703169",
+                    "naptan:Bearing": "NW",
+                    "naptan:CommonName": "Oxleys Factory (N bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Oxleys Factory",
+                    "naptan:NaptanCode": "cumdmjpt",
+                    "naptan:Street": "Cooper Lane",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.062642,
+                    54.162498
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926616",
+                "name": "The Derby Arms (N bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "The Derby Arms (N bound)",
+                    "naptan:AtcoCode": "090079703215",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "The Derby Arms (N bound)",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "The Derby Arms",
+                    "naptan:NaptanCode": "cumdmjta",
+                    "naptan:Street": "Church Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.121627,
+                    54.162651
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926645",
+                "name": "Foot of Briery Bank",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Foot of Briery Bank",
+                    "naptan:AtcoCode": "090079732352",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Foot of Briery Bank",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Kevinside",
+                    "naptan:NaptanCode": "cumdmpmp",
+                    "naptan:Street": "Briery Bank",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.824709,
+                    54.197166
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926661",
+                "name": "Town End Path (S bound)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Town End Path (S bound)",
+                    "naptan:AtcoCode": "090079733293",
+                    "naptan:Bearing": "S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Town End Path (S bound)",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Troutbeck Town End Path",
+                    "naptan:NaptanCode": "cumdmtad",
+                    "naptan:Street": "A592",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.909247,
+                    54.409184
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926676",
+                "name": "Fold Head",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Fold Head",
+                    "naptan:AtcoCode": "090079734270",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Fold Head",
+                    "naptan:Indicator": "near",
+                    "naptan:Landmark": "Fellside Cottages",
+                    "naptan:NaptanCode": "cumdtajp",
+                    "naptan:Street": "Rayrigg Road",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.919839,
+                    54.366108
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926677",
+                "name": "Meathop Road End",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Meathop Road End",
+                    "naptan:AtcoCode": "090079741464",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Meathop Road End",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "junction to Meathrop",
+                    "naptan:NaptanCode": "cumdmtdt",
+                    "naptan:Street": "B5277",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.872352,
+                    54.224155
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926678",
+                "name": "Mill Side Road End",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Mill Side Road End",
+                    "naptan:AtcoCode": "090079741704",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "Mill Side Road End",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Near junction to Mill Side",
+                    "naptan:NaptanCode": "cumdmtdw",
+                    "naptan:Street": "A590(T)",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.840603,
+                    54.248425
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "926680",
+                "name": "Junction to Witherslack",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Junction to Witherslack",
+                    "naptan:AtcoCode": "090079741947",
+                    "naptan:Bearing": "S",
+                    "naptan:CommonName": "Junction to Witherslack",
+                    "naptan:Indicator": "opp",
+                    "naptan:Landmark": "Junction to Witherslack",
+                    "naptan:NaptanCode": "cumdmtgm",
+                    "naptan:Street": "A590(T)",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.857015,
+                    54.237587
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "938396",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "operator": "Stagecoach",
+                    "route_ref": "80",
+                    "source": "survey",
+                    "towards": "Ingleton"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.531997,
+                    54.145527
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1027994",
+                "name": "Claughton",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Claughton"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.666462,
+                    54.092712
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1183460",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "shelter": "no"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.469486,
+                    54.152126
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1220761",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.358295,
+                    54.111099
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1330537",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.999213,
+                    54.24918
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1416795",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.764169,
+                    54.172764
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1463041",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.718713,
+                    54.187466
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1487168",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "bench": "no",
+                    "highway": "bus_stop",
+                    "shelter": "no",
+                    "tactile_paving": "no"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.971141,
+                    54.438362
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1512069",
+                "name": "Castle Grove junction",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "Castle Grove junction",
+                    "naptan:AtcoCode": "090079360928",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Castle Grove junction",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "junction with Castle Grove",
+                    "naptan:NaptanCode": "cumdjmgw",
+                    "naptan:Street": "Castle Drive",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.731895,
+                    54.325817
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1514449",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "shelter": "no",
+                    "timetable": "yes"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.338149,
+                    54.10244
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1626963",
+                "name": "Brantwood",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Brantwood",
+                    "naptan:AtcoCode": "090079152194",
+                    "naptan:Bearing": "S",
+                    "naptan:BusStopType": "CUS",
+                    "naptan:CommonName": "Brantwood",
+                    "naptan:Indicator": "o/s",
+                    "naptan:Landmark": "Brantwood",
+                    "naptan:NaptanCode": "cumdgtwj",
+                    "naptan:Street": "No name",
+                    "naptan:verified": "no",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.059658,
+                    54.353203
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1782825",
+                "name": "Dungeon Ghyll Old Hotel",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Dungeon Ghyll Old Hotel",
+                    "shelter": "yes",
+                    "shelter_type": "public_transport"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.102748,
+                    54.444168
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1813073",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.804023,
+                    54.169636
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1813485",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.810793,
+                    54.176689
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1921903",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.021914,
+                    54.464321
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "1992364",
+                "name": "Dalesman",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Dalesman"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.529122,
+                    54.32354
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2034536",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "shelter": "no",
+                    "source": "survey"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.595847,
+                    54.199959
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2103122",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.519908,
+                    54.119942
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2158833",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "bench": "yes",
+                    "covered": "yes",
+                    "highway": "bus_stop",
+                    "shelter": "yes"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.51547,
+                    54.164318
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2217172",
+                "name": "St Mary's Church",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "name": "St Mary's Church",
+                    "naptan:AtcoCode": "090079732943",
+                    "naptan:Bearing": "E",
+                    "naptan:CommonName": "St Mary's Church",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "jct to Church St and St Marys Park",
+                    "naptan:NaptanCode": "cumdmpwj",
+                    "naptan:PlusbusZoneRef": "WMER",
+                    "naptan:Street": "Church Street",
+                    "naptan:verified": "yes",
+                    "source": "naptan_import"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.909758,
+                    54.381237
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2217174",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "local_ref": "AT",
+                    "naptan:Bearing": "N",
+                    "naptan:CommonName": "Windy Corner",
+                    "naptan:Indicator": "at",
+                    "naptan:Landmark": "Caiston Beck Path End",
+                    "naptan:NaptanCode": "cumdawda",
+                    "naptan:Street": "A592",
+                    "naptan:verified": "yes",
+                    "source": "gps"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.925159,
+                    54.49297
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2237835",
+                "name": "Moorcock Inn",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Moorcock Inn"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.312409,
+                    54.329094
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2301419",
+                "name": "Wray Road End",
+                "osmTags": {
+                    "Bearing": "N",
+                    "highway": "bus_stop",
+                    "name": "Wray Road End",
+                    "public_transport": "stop_position",
+                    "source": "gps"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.981694,
+                    54.405682
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2594801",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "operator": "Stagecoach Bus",
+                    "ref": "555",
+                    "ref_1": "599",
+                    "ref_2": "800",
+                    "ref_3": "516",
+                    "ref_4": "505",
+                    "route_master": "bus",
+                    "type": "route"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.948478,
+                    54.41037
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2785869",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.222986,
+                    54.1292
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2880367",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "bench": "yes",
+                    "covered": "yes",
+                    "highway": "bus_stop"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.766456,
+                    54.128529
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2885202",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "bench": "yes",
+                    "highway": "bus_stop",
+                    "shelter": "yes"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.788537,
+                    54.108639
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "2885233",
+                "name": "(Name not known)",
+                "osmTags": {
+                    "bench": "yes",
+                    "highway": "bus_stop",
+                    "shelter": "yes"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.796053,
+                    54.093742
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": "3010057",
+                "name": "Grizebeck Service Station",
+                "osmTags": {
+                    "highway": "bus_stop",
+                    "name": "Grizebeck Service Station",
+                    "shelter": "yes"
+                }
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.170791,
+                    54.255905
+                ]
+            }
+        }
+    ]
+}
