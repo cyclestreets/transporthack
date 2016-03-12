@@ -1,1 +1,24 @@
-hello, world!
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Title of the document</title>
+	<link rel="stylesheet" type="text/css" href="css/styles.css" />
+</head>
+
+<body>
+
+
+<h1>Transport hack</h1>
+
+<p>hello, world!</p>
+
+
+
+<hr />
+<p class="revision">Revision: <?php $gitRevision = exec ('git rev-parse --short HEAD'); echo "<a href=\"https://github.com/cyclestreets/transporthack/commit/{$gitRevision}\">{$gitRevision}</a>"; ?></p>
+
+</body>
+
+</html>
+
+
