@@ -21,8 +21,12 @@ nrow(rf)
 
 rf@data <- cbind(rf@data, f@data[sel,])
 rnet = overline(sldf = rf, attrib = "CycleJourneys", fun = sum)
-mapview(rnet, lwd = rnet$CycleJourneys)
-
+m = mapview(rnet, lwd = rnet$CycleJourneys)@map
+dir.create("public_html")
+library(htmlwidgets)
+saveWidget(m, "map-cyclenet.html")
+file.rename("map-cyclenet.html", "public_html/map-cyclenet.html")
+file.rename("index.html", "public_html/index.html")
 geojson_write(rnet, file = "geodata/rnet-cycle-journeys.geojson")
 
 
