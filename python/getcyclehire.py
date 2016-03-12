@@ -64,5 +64,5 @@ for f in allfeatures:
 
 
 d = json.dumps(j)
-open("../data/outputcyclehireshops.json", "w").write(d)
+open("../geodata/cyclehireshops.geojson", "w").write(d)
 
