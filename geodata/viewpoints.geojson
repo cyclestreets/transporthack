@@ -1,4 +1,5 @@
 {
+    "_comment": "https://api.cyclestreets.net/v2/pois.locations?type=viewpoints&bbox=-3.24189445220635,54.0935416702061,-2.30983758690152,54.4998360406647&limit=400&fields=id,latitude,longitude,name,osmTags",
     "type": "FeatureCollection",
     "features": [
         {
