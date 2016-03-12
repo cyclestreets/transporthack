@@ -1,0 +1,17 @@
+---
+title: "Reducing car dependency in the Lake District"
+output:
+  html_document:
+    keep_md: yes
+---
+
+This repo contains code and data for the [TransportHack](http://www.landor.co.uk/smartertravel/2016/hackathon.php) event.
+
+For documentation see the repo's [wiki](https://github.com/cyclestreets/transporthack/wiki).
+
+Conventions: store code in sub-folders, e.g. [`R/`](https://github.com/cyclestreets/transporthack/tree/master/R).
+
+Non-geographic data to be stored in `data/`.
+
+Geographic data to be stored as GeoJSON in `geodata/`.
+
