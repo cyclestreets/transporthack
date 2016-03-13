@@ -39,8 +39,9 @@
         <script src="data/json_electricbicyclenetwork7.js"></script>
         <script src="data/json_cyclehireshops8.js"></script>
         <script src="data/json_collisions9.js"></script>
-        <script src="data/json_busstops10.js"></script>
-        <script src="data/json_bicyclehirefromOSM11.js"></script>
+        <script src="data/json_top7arrivals10.js"></script>
+        <script src="data/json_busstops11.js"></script>
+        <script src="data/json_bicyclehirefromOSM12.js"></script>
         <script>
         L.ImageOverlay.include({
             getBounds: function () {
@@ -48,8 +49,8 @@
             }
         });
         var map = L.map('map', {
-            zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[53.9388849811,-3.92350150261],[54.6681417137,-1.64486584754]]);
+            zoomControl:true, maxZoom:28, minZoom:8
+        }).fitBounds([[54.3253980105,-3.24686053539],[54.5072179074,-2.67720162162]]);
         var hash = new L.Hash(map);
         map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         var feature_group = new L.featureGroup([]);
@@ -60,11 +61,16 @@
             maxZoom: 28
         });
         basemap0.addTo(map);
-        var basemap1 = L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
-            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>,<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Mapdata: &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        var basemap1 = L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             maxZoom: 28
         });
         basemap1.addTo(map);
+        var basemap2 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap2.addTo(map);
         var layerOrder = new Array();
         function stackLayers() {
             for (index = 0; index < layerOrder.length; index++) {
@@ -426,16 +432,100 @@
             onEachFeature: pop_collisions9, 
             pointToLayer: doPointToLayercollisions9
             });
-        var cluster_groupcollisions9JSON = new L.MarkerClusterGroup({showCoverageOnHover: false});
-        cluster_groupcollisions9JSON.addLayer(json_collisions9JSON);
-
-        layerOrder[layerOrder.length] = cluster_groupcollisions9JSON;
+        layerOrder[layerOrder.length] = json_collisions9JSON;
 
         bounds_group.addLayer(json_collisions9JSON);
-        function pop_busstops10(feature, layer) {
+        function pop_top7arrivals10(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">Name</th><td>' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td></tr><tr><th scope="row">lon</th><td>' + (feature.properties['lon'] !== null ? Autolinker.link(String(feature.properties['lon'])) : '') + '</td></tr><tr><th scope="row">lat</th><td>' + (feature.properties['lat'] !== null ? Autolinker.link(String(feature.properties['lat'])) : '') + '</td></tr><tr><th scope="row">Arrivals</th><td>' + (feature.properties['Arrivals'] !== null ? Autolinker.link(String(feature.properties['Arrivals'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
         }
 
-        function doStylebusstops10() {
+        function doStyletop7arrivals10(feature) {
+        if (feature.properties.Arrivals >= 108.0 &&
+                feature.properties.Arrivals <= 403.4) {
+
+            return {
+                radius: '2.0',
+                fillColor: '#edf8fb',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.Arrivals >= 403.4 &&
+                feature.properties.Arrivals <= 698.8) {
+
+            return {
+                radius: '2.4',
+                fillColor: '#b3cde3',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.Arrivals >= 698.8 &&
+                feature.properties.Arrivals <= 994.2) {
+
+            return {
+                radius: '3.0',
+                fillColor: '#8c96c6',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.Arrivals >= 994.2 &&
+                feature.properties.Arrivals <= 1289.6) {
+
+            return {
+                radius: '3.8',
+                fillColor: '#8856a7',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        if (feature.properties.Arrivals >= 1289.6 &&
+                feature.properties.Arrivals <= 1585.0) {
+
+            return {
+                radius: '5.0',
+                fillColor: '#810f7c',
+                color: '#000000',
+                weight: 0.0,
+                fillOpacity: '1.0',
+                opacity: '1.0',
+                dashArray: ''
+            }
+        }
+
+        }
+        var json_top7arrivals10JSON = new L.geoJson(json_top7arrivals10, {
+            onEachFeature: pop_top7arrivals10,
+            pointToLayer: function (feature, latlng) {
+                return L.circleMarker(latlng, doStyletop7arrivals10(feature))
+            }
+        });
+        layerOrder[layerOrder.length] = json_top7arrivals10JSON;
+
+        bounds_group.addLayer(json_top7arrivals10JSON);
+        feature_group.addLayer(json_top7arrivals10JSON);
+        function pop_busstops11(feature, layer) {
+        }
+
+        function doStylebusstops11() {
             return {
                 radius: 2.0,
                 fillColor: '#1f78b4',
@@ -448,22 +538,22 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayerbusstops10(feature, latlng) {
-            return L.circleMarker(latlng, doStylebusstops10())
+        function doPointToLayerbusstops11(feature, latlng) {
+            return L.circleMarker(latlng, doStylebusstops11())
         }
-        var json_busstops10JSON = new L.geoJson(json_busstops10, {
-            onEachFeature: pop_busstops10, 
-            pointToLayer: doPointToLayerbusstops10
+        var json_busstops11JSON = new L.geoJson(json_busstops11, {
+            onEachFeature: pop_busstops11, 
+            pointToLayer: doPointToLayerbusstops11
             });
-        layerOrder[layerOrder.length] = json_busstops10JSON;
+        layerOrder[layerOrder.length] = json_busstops11JSON;
 
-        bounds_group.addLayer(json_busstops10JSON);
-        function pop_bicyclehirefromOSM11(feature, layer) {
+        bounds_group.addLayer(json_busstops11JSON);
+        function pop_bicyclehirefromOSM12(feature, layer) {
             var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStylebicyclehirefromOSM11() {
+        function doStylebicyclehirefromOSM12() {
             return {
                 radius: 2.0,
                 fillColor: '#8f454f',
@@ -476,20 +566,20 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayerbicyclehirefromOSM11(feature, latlng) {
-            return L.circleMarker(latlng, doStylebicyclehirefromOSM11())
+        function doPointToLayerbicyclehirefromOSM12(feature, latlng) {
+            return L.circleMarker(latlng, doStylebicyclehirefromOSM12())
         }
-        var json_bicyclehirefromOSM11JSON = new L.geoJson(json_bicyclehirefromOSM11, {
-            onEachFeature: pop_bicyclehirefromOSM11, 
-            pointToLayer: doPointToLayerbicyclehirefromOSM11
+        var json_bicyclehirefromOSM12JSON = new L.geoJson(json_bicyclehirefromOSM12, {
+            onEachFeature: pop_bicyclehirefromOSM12, 
+            pointToLayer: doPointToLayerbicyclehirefromOSM12
             });
-        layerOrder[layerOrder.length] = json_bicyclehirefromOSM11JSON;
+        layerOrder[layerOrder.length] = json_bicyclehirefromOSM12JSON;
 
-        bounds_group.addLayer(json_bicyclehirefromOSM11JSON);
+        bounds_group.addLayer(json_bicyclehirefromOSM12JSON);
         raster_group.addTo(map);
         feature_group.addTo(map);
-        var baseMaps = {'Thunderforest Cycle': basemap0, 'Stamen Toner': basemap1};
-        L.control.layers(baseMaps,{'<img src="legend/bicyclehirefromOSM11.png" /> bicyclehirefromOSM': json_bicyclehirefromOSM11JSON,'<img src="legend/busstops10.png" /> busstops': json_busstops10JSON,'<img src="legend/collisions9.png" /> collisions': cluster_groupcollisions9JSON,'<img src="legend/cyclehireshops8.png" /> cyclehireshops': json_cyclehireshops8JSON,'<img src="legend/electricbicyclenetwork7.png" /> electricbicyclenetwork': json_electricbicyclenetwork7JSON,'<img src="legend/hostels6.png" /> hostels': json_hostels6JSON,'<img src="legend/ldlocalauthority5.png" /> ld-local-authority': json_ldlocalauthority5JSON,'<img src="legend/railwaystations4.png" /> railwaystations': json_railwaystations4JSON,'<img src="legend/rnetbusjourneys3.png" /> rnet-bus-journeys': json_rnetbusjourneys3JSON,'rnet-car-journeys-sub10k<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_162000200000.png" />  16.2000 - 20.0000 <br />': json_rnetcarjourneyssub10k2JSON,'rnet-cycle-journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_1000028000.png" />  1.0000 - 2.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_2800046000.png" />  2.8000 - 4.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_4600064000.png" />  4.6000 - 6.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_6400082000.png" />  6.4000 - 8.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_82000100000.png" />  8.2000 - 10.0000 <br />': json_rnetcyclejourneys1JSON,'<img src="legend/viewpoints0.png" /> viewpoints': json_viewpoints0JSON,},{collapsed:false}).addTo(map);
+        var baseMaps = {'Thunderforest Cycle': basemap0, 'Thunderforest Transport': basemap1, 'OSM Standard': basemap2};
+        L.control.layers(baseMaps,{'<img src="legend/bicyclehirefromOSM12.png" /> bicyclehirefromOSM': json_bicyclehirefromOSM12JSON,'<img src="legend/busstops11.png" /> busstops': json_busstops11JSON,'top-7-arrivals<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_10800004034000.png" />  108.0000 - 403.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_40340006988000.png" />  403.4000 - 698.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_69880009942000.png" />  698.8000 - 994.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_994200012896000.png" />  994.2000 - 1289.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_1289600015850000.png" />  1289.6000 - 1585.0000 <br />': json_top7arrivals10JSON,'<img src="legend/collisions9.png" /> collisions': json_collisions9JSON,'<img src="legend/cyclehireshops8.png" /> cyclehireshops': json_cyclehireshops8JSON,'<img src="legend/electricbicyclenetwork7.png" /> electricbicyclenetwork': json_electricbicyclenetwork7JSON,'<img src="legend/hostels6.png" /> hostels': json_hostels6JSON,'<img src="legend/ldlocalauthority5.png" /> ld-local-authority': json_ldlocalauthority5JSON,'<img src="legend/railwaystations4.png" /> railwaystations': json_railwaystations4JSON,'<img src="legend/rnetbusjourneys3.png" /> rnet-bus-journeys': json_rnetbusjourneys3JSON,'rnet-car-journeys-sub10k<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_162000200000.png" />  16.2000 - 20.0000 <br />': json_rnetcarjourneyssub10k2JSON,'rnet-cycle-journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_1000028000.png" />  1.0000 - 2.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_2800046000.png" />  2.8000 - 4.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_4600064000.png" />  4.6000 - 6.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_6400082000.png" />  6.4000 - 8.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_82000100000.png" />  8.2000 - 10.0000 <br />': json_rnetcyclejourneys1JSON,'<img src="legend/viewpoints0.png" /> viewpoints': json_viewpoints0JSON,},{collapsed:false}).addTo(map);
         L.control.scale({options: {position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}}).addTo(map);
         stackLayers();
         map.on('overlayadd', restackLayers);
