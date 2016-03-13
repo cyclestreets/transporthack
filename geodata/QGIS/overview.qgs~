@@ -3995,25 +3995,25 @@
       </LayerSnappingToleranceList>
     </Digitizing>
     <qgis2web>
-      <MinifyGeoJSONfiles type="int">0</MinifyGeoJSONfiles>
-      <Minzoomlevel type="int">9</Minzoomlevel>
-      <Showpopupsonhover type="int">0</Showpopupsonhover>
+      <Deleteunusedfields type="int">0</Deleteunusedfields>
+      <Maxzoomlevel type="int">27</Maxzoomlevel>
       <Addmeasuretool type="int">0</Addmeasuretool>
-      <Basemaps type="QString">OSM HOT,Thunderforest Cycle,Thunderforest Transport</Basemaps>
-      <Precision type="int">5</Precision>
-      <Addlayerslist type="int">0</Addlayerslist>
+      <Showpopupsonhover type="int">0</Showpopupsonhover>
+      <Basemaps type="QString">Thunderforest Cycle,Thunderforest Transport,OSM Standard</Basemaps>
       <Exportfolder type="QString">C:\Users\Matt\AppData\Local\Temp\qgis2web</Exportfolder>
-      <Mappinglibrarylocation type="int">0</Mappinglibrarylocation>
-      <Geolocateuser type="int">0</Geolocateuser>
-      <Restricttoextent type="int">0</Restricttoextent>
-      <Addaddresssearch type="int">0</Addaddresssearch>
-      <Maxzoomlevel type="int">21</Maxzoomlevel>
+      <Precision type="int">5</Precision>
+      <Addlayerslist type="int">1</Addlayerslist>
       <Highlightonhover type="int">0</Highlightonhover>
       <MatchprojectCRS type="int">0</MatchprojectCRS>
+      <Addaddresssearch type="int">0</Addaddresssearch>
+      <Minzoomlevel type="int">7</Minzoomlevel>
+      <Geolocateuser type="int">0</Geolocateuser>
+      <MinifyGeoJSONfiles type="int">0</MinifyGeoJSONfiles>
       <Extent type="int">0</Extent>
-      <Deleteunusedfields type="int">0</Deleteunusedfields>
+      <Restricttoextent type="int">0</Restricttoextent>
       <Template type="int">0</Template>
-      <Addscalebar type="int">0</Addscalebar>
+      <Addscalebar type="int">1</Addscalebar>
+      <Mappinglibrarylocation type="int">0</Mappinglibrarylocation>
     </qgis2web>
     <PositionPrecision>
       <DecimalPlaces type="int">2</DecimalPlaces>
