@@ -13,7 +13,7 @@ ll = min(c0[0], c1[0], c2[0], c3[0]), min(c0[1], c1[1], c2[1], c3[1])
 ur = max(c0[0], c1[0], c2[0], c3[0]), max(c0[1], c1[1], c2[1], c3[1])
 
 # test
-apikey = "61cfa90cb57556e7"
+apikey = API_KEY
 
 # make the call
 url = "https://api.cyclestreets.net/v2/pois.locations?"
