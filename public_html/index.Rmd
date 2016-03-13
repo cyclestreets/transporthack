@@ -15,6 +15,10 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Welcome to the CycleStreets.net Transport Hack
 
+An (interactive) image can tell 1000 words, so let's start with that. Here's our overview map of the proposal:
+
+<iframe src="leaflet/index.html" width="100%" height="600"></iframe>
+
 All the code and data behind this hack is open access, and can be found on the team's [GitHub repo](https://github.com/cyclestreets/transporthack). If you have a GitHub account, feel free to fork/contribute to the project, for example by [editing this frontpage](https://github.com/cyclestreets/transporthack/edit/master/public_html/index.Rmd)!
 
 Here you can find some of the outputs for the CycleStreets.net team for the
@@ -23,6 +27,8 @@ Here you can find some of the outputs for the CycleStreets.net team for the
 - A [map of likely routes](map-cyclenet.html) that cyclists represented in the Lake District [origin-destination dataset](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv) took while visiting the area. 
 
 - A [map of the most common car journeys](map-car-od.html) into the Lake District based on processing the same dataset.
+
+
 
 ## Figures and code
 

@@ -130,6 +130,9 @@ $(document).ready(function () {
 <!--Don't edit the html page directly - use (R)Markdown!-->
 <div id="welcome-to-the-cyclestreets.net-transport-hack" class="section level1">
 <h1>Welcome to the CycleStreets.net Transport Hack</h1>
+<p>An (interactive) image can tell 1000 words, so let’s start with that. Here’s our overview map of the proposal:</p>
+<iframe src="leaflet/index.html" width="100%" height="600">
+</iframe>
 <p>All the code and data behind this hack is open access, and can be found on the team’s <a href="https://github.com/cyclestreets/transporthack">GitHub repo</a>. If you have a GitHub account, feel free to fork/contribute to the project, for example by <a href="https://github.com/cyclestreets/transporthack/edit/master/public_html/index.Rmd">editing this frontpage</a>!</p>
 <p>Here you can find some of the outputs for the CycleStreets.net team for the <a href="http://www.landor.co.uk/smartertravel/2016/hackathon.php">TransportHack</a> event.</p>
 <ul>
@@ -138,8 +141,8 @@ $(document).ready(function () {
 </ul>
 <div id="figures-and-code" class="section level2">
 <h2>Figures and code</h2>
-<p>A picture can tell a thousand words. The figures and code snippets showed below help show what we’ve been up to!</p>
-<p>A key challange was to process the origin-destination dataset of visitor travel demand so it could be displayed in a meaningful way on a map. The first stage was to extract the data from the proprietary .xls format and put it into an open source software friendly <a href="https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv">csv file, which also displays natively on GitHub</a>. This was done with the following code:</p>
+<p>A picture can tell a story of a thousand words. The figures and code snippets showed below help show what we’ve been up to!</p>
+<p>A key challenge was to process the origin-destination dataset of visitor travel demand so it could be displayed in a meaningful way on a map. The first stage was to extract the data from the proprietary .xls format and put it into an open source software friendly <a href="https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv">csv file, which also displays natively on GitHub</a>. This was done with the following code:</p>
 <pre class="r"><code>f = &quot;data/LD%20origin-destination%20summary.xls&quot;
 odf = readxl::read_excel(f)
 write.csv(odf, &quot;data/od-summary.csv&quot;)</code></pre>
