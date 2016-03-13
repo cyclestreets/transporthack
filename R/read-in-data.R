@@ -4,13 +4,7 @@
 
 
 # Polygon of Lake District
-devtools::install_github("robinlovelace/overpass")
-library(overpass)
-library(geojsonio)
-library(sp)
-library(stplanr)
-library(tmap)
-library(osmplotr)
+source("R/setup.R")
 # download.file("https://github.com/npct/pct-bigdata/raw/master/las-pcycle.geojson",
 #               "las-pcycle.geojson")
 # ld = geojson_read("las-pcycle.geojson", what = "sp")
