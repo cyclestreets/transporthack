@@ -1,0 +1,689 @@
+{
+    "type": "FeatureCollection",
+    "properties": {
+        "dimensions": "0.041,0.024",
+        "gridwsen": "-3.2595,54.084,-2.2755,54.516"
+    },
+    "features": [
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11957,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/11957/cyclestreets11957-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Waterhead (north end of Coniston Water) - National Trust cycle parking"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.053942,
+                    54.371708
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11959,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/11959/cyclestreets11959-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "W2W (Wear to Walney) cycle route east from Greenodd on ex-railway"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.047976,
+                    54.234322
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11961,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/11961/cyclestreets11961-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cycle route approaching Newby Bridge roundabout"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.969313,
+                    54.267807
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11963,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/11963/cyclestreets11963-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cycle bridge on W2W (Wear to Walney) cycle route"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.819581,
+                    54.258957
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 11964,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/11964/cyclestreets11964-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cycle bridge, junction on Lancashire Cycleway, Carnforth"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.77688,
+                    54.135151
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 12163,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/12163/cyclestreets12163-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Riverside Walk, Kendal (National Cycle Route 6) and bridge over the river Kent"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.743117,
+                    54.322887
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 13524,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/13524/cyclestreets13524-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Bridleways on the south side of Rydal Water - National Park signs grudgingly admit that cyclists have the right to use them, with the unspoken sub-text 'but we'd much rather you weren't here at all'."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.989022,
+                    54.445377
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 13530,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/13530/cyclestreets13530-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Skelghyll Lane, bridleway from Ambleside to Troutbeck - quite a tough push up from Ambleside! (approximate location)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.957565,
+                    54.421001
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 27714,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/27714/cyclestreets27714-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Toucan Crossing from Morecambe Promenade to shared-use path enabling cyclists to head south on NCN Route 69."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.825751,
+                    54.086132
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 32799,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/32799/cyclestreets32799-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Sign for Regional Cycle Route 37."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.075844,
+                    54.369209
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 33114,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/33114/cyclestreets33114-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "No Cycling on footpath, Langdale"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.062232,
+                    54.417213
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 33117,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/33117/cyclestreets33117-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Electric bike charging point at a pub (is that just a 13amp socket?)"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.054693,
+                    54.421326
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 43679,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/43679/cyclestreets43679-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cycle stands at the National Trust's new reception/shop at Sizergh Castle"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.773321,
+                    54.283333
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 44116,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/44116/cyclestreets44116-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Where is this place?"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.8325,
+                    54.203667
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 54059,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/54059/cyclestreets54059-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Start of bridleway to Stainton with Adgarley"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.157055,
+                    54.151112
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 59796,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/59796/cyclestreets59796-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cycle path Coniston to High Yewdale, parallel to A593 road.  Shows how the route fords streams using surface only suitable for bikes with fat tyres. Fords have bridge bypasses.  Cycle route is surfaced with crushed slate waste.   Tourers with heavy loads may prefer the A593."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.069198,
+                    54.379021
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 66045,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/66045/cyclestreets66045-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cycle parking at No Entry sign in central Kendal"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.74523,
+                    54.32798
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 66128,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/66128/cyclestreets66128-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "End of cycle path at Troutbeck Bridge.  No cycle path or lanes south of here to Windermere, along a steep and busy road."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.923232,
+                    54.39502
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 66141,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/66141/cyclestreets66141-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Brathay bridge, on NCN6 and RR37, near Clappersgate."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.983538,
+                    54.42165
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 66143,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/66143/cyclestreets66143-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Left turn in Skelwith Fold, following route 37"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.002443,
+                    54.416931
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72777,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72777/cyclestreets72777-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Haverthwaite station - a very popular steam railway with a large car park and precisely no cycle parking."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.998667,
+                    54.249836
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72819,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72819/cyclestreets72819-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Byway below Great Gable"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.24197,
+                    54.471291
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72820,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72820/cyclestreets72820-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Bridge on byway south of Seathwaite"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.182819,
+                    54.487644
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72822,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72822/cyclestreets72822-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cyclists on the Old Corpse Road south of Wast Water"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.256508,
+                    54.432068
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72903,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72903/cyclestreets72903-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Junction of bridleways in Borrowdale"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.138641,
+                    54.514698
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72905,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72905/cyclestreets72905-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "A couple of rather low cycle stands near Dove Cottage"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.016758,
+                    54.453815
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72908,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72908/cyclestreets72908-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Ford on bridleway just north of Grasmere"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.020873,
+                    54.479343
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72909,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72909/cyclestreets72909-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Bridleway (and Roman road) on High Street"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.864556,
+                    54.505329
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72910,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72910/cyclestreets72910-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Bridge on track by Haweswater"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.822489,
+                    54.499477
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 72911,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/72911/cyclestreets72911-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Byway/bridleway sign by Haweswater"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.821308,
+                    54.488636
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73002,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/73002/cyclestreets73002-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Track under former railway bridge"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.365665,
+                    54.464699
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73012,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/73012/cyclestreets73012-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Travellers on their way to the Appleby Horse Fair taking over the cycle parking in Kirkby Stephen"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.348619,
+                    54.472858
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73013,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/73013/cyclestreets73013-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Bridleway"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.45741,
+                    54.445713
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73015,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/73015/cyclestreets73015-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "New shared-use path by the A685"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.44523,
+                    54.438221
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73016,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/73016/cyclestreets73016-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Cyclists on bridleway near Smardale Gill viaduct"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.409986,
+                    54.454384
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73017,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/73017/cyclestreets73017-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Bridleway"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.293712,
+                    54.455563
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 73018,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/73018/cyclestreets73018-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Bridleway"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.296947,
+                    54.433533
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 74058,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/74058/cyclestreets74058-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Windermere Bike Boat which links the National Park Visitor Centre, Brockhole with the west side of the lake cycle path which is traffic free"
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.945344,
+                    54.39941
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 74059,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/74059/cyclestreets74059-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Langdale Pikes seen from Regional Route 37, Elterwater, Cumbria."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.022324,
+                    54.427238
+                ]
+            }
+        },
+        {
+            "type": "Feature",
+            "properties": {
+                "id": 74060,
+                "hasPhoto": true,
+                "thumbnailUrl": "http://www.cyclestreets.net/location/74060/cyclestreets74060-size425.jpg",
+                "license": "cc-by-sa",
+                "caption": "Windermere ferry which links Bowness with the cycle route along the west side of the lake."
+            },
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -2.931193,
+                    54.354164
+                ]
+            }
+        }
+    ]
+}
