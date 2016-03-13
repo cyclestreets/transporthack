@@ -1,4 +1,4 @@
-var json_hostels5={
+var json_Hostels5={
 "type": "FeatureCollection",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
                                                                                 
