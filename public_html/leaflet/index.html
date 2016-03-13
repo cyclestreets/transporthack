@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="css/leaflet.css" />
+        <link rel="stylesheet" type="text/css" href="css/qgis2web.css">
+        <link rel="stylesheet" href="css/label.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.css" />
+        <link rel="stylesheet" href="css/MarkerCluster.Default.css" />
+        <script src="js/leaflet.js"></script>
+        <script src="js/leaflet-hash.js"></script>
+        <script src="js/label.js"></script>
+        <script src="js/Autolinker.min.js"></script>
+        <script src="js/leaflet.markercluster.js"></script>
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+        </div>
+        <script src="data/json_viewpoints0.js"></script>
+        <script src="data/json_rnetcyclejourneys1.js"></script>
+        <script src="data/json_rnetcarjourneyssub10k2.js"></script>
+        <script src="data/json_rnetbusjourneys3.js"></script>
+        <script src="data/json_railwaystations4.js"></script>
+        <script src="data/json_ldlocalauthority5.js"></script>
+        <script src="data/json_hostels6.js"></script>
+        <script src="data/json_electricbicyclenetwork7.js"></script>
+        <script src="data/json_cyclehireshops8.js"></script>
+        <script src="data/json_collisions9.js"></script>
+        <script src="data/json_busstops10.js"></script>
+        <script src="data/json_bicyclehirefromOSM11.js"></script>
+        <script>
+        L.ImageOverlay.include({
+            getBounds: function () {
+                return this._bounds;
+            }
+        });
+        var map = L.map('map', {
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[53.9388849811,-3.92350150261],[54.6681417137,-1.64486584754]]);
+        var hash = new L.Hash(map);
+        map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
+        var feature_group = new L.featureGroup([]);
+        var bounds_group = new L.featureGroup([]);
+        var raster_group = new L.LayerGroup([]);
+        var basemap0 = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap0.addTo(map);
+        var basemap1 = L.tileLayer('http://a.tile.stamen.com/toner/{z}/{x}/{y}.png', {
+            attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>,<a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a> &mdash; Mapdata: &copy; <a href="http://openstreetmap.org">OpenStreetMap</a>contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+            maxZoom: 28
+        });
+        basemap1.addTo(map);
+        var layerOrder = new Array();
+        function stackLayers() {
+            for (index = 0; index < layerOrder.length; index++) {
+                map.removeLayer(layerOrder[index]);
+                map.addLayer(layerOrder[index]);
+            }
+        }
+        function restackLayers() {
+            for (index = 0; index < layerOrder.length; index++) {
+                layerOrder[index].bringToFront();
+            }
+        }
+        layerControl = L.control.layers({},{},{collapsed:false});
+        function pop_viewpoints0(feature, layer) {
+        }
+
+        function doStyleviewpoints0() {
+            return {
+                radius: 3.0,
+                fillColor: '#fb9a99',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerviewpoints0(feature, latlng) {
+            return L.circleMarker(latlng, doStyleviewpoints0())
+        }
+        var json_viewpoints0JSON = new L.geoJson(json_viewpoints0, {
+            onEachFeature: pop_viewpoints0, 
+            pointToLayer: doPointToLayerviewpoints0
+            });
+        layerOrder[layerOrder.length] = json_viewpoints0JSON;
+
+        bounds_group.addLayer(json_viewpoints0JSON);
+        function pop_rnetcyclejourneys1(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">CycleJourneys</th><td>' + (feature.properties['CycleJourneys'] !== null ? Autolinker.link(String(feature.properties['CycleJourneys'])) : '') + '</td></tr><tr><th scope="row">CycleJourneys</th><td>' + (feature.properties['CycleJourneys'] !== null ? Autolinker.link(String(feature.properties['CycleJourneys'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylernetcyclejourneys1(feature) {
+        if (feature.properties.CycleJourneys >= 1.0 &&
+                feature.properties.CycleJourneys <= 2.8) {
+
+            return {
+                color: '#ffffb2',
+                weight: '1.04',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CycleJourneys >= 2.8 &&
+                feature.properties.CycleJourneys <= 4.6) {
+
+            return {
+                color: '#fecc5c',
+                weight: '1.84',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CycleJourneys >= 4.6 &&
+                feature.properties.CycleJourneys <= 6.4) {
+
+            return {
+                color: '#fd8d3c',
+                weight: '2.64',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CycleJourneys >= 6.4 &&
+                feature.properties.CycleJourneys <= 8.2) {
+
+            return {
+                color: '#f03b20',
+                weight: '3.44',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CycleJourneys >= 8.2 &&
+                feature.properties.CycleJourneys <= 10.0) {
+
+            return {
+                color: '#bd0026',
+                weight: '4.24',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        }
+        var json_rnetcyclejourneys1JSON = new L.geoJson(json_rnetcyclejourneys1, {
+            onEachFeature: pop_rnetcyclejourneys1,
+            style: doStylernetcyclejourneys1
+        });
+        layerOrder[layerOrder.length] = json_rnetcyclejourneys1JSON;
+        bounds_group.addLayer(json_rnetcyclejourneys1JSON);
+        function pop_rnetcarjourneyssub10k2(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">CarJourneys</th><td>' + (feature.properties['CarJourneys'] !== null ? Autolinker.link(String(feature.properties['CarJourneys'])) : '') + '</td></tr><tr><th scope="row">CarJourneys</th><td>' + (feature.properties['CarJourneys'] !== null ? Autolinker.link(String(feature.properties['CarJourneys'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylernetcarjourneyssub10k2(feature) {
+        if (feature.properties.CarJourneys >= 1.0 &&
+                feature.properties.CarJourneys <= 4.8) {
+
+            return {
+                color: '#ffffb2',
+                weight: '1.04',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CarJourneys >= 4.8 &&
+                feature.properties.CarJourneys <= 8.6) {
+
+            return {
+                color: '#fecc5c',
+                weight: '1.84',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CarJourneys >= 8.6 &&
+                feature.properties.CarJourneys <= 12.4) {
+
+            return {
+                color: '#fd8d3c',
+                weight: '2.64',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CarJourneys >= 12.4 &&
+                feature.properties.CarJourneys <= 16.2) {
+
+            return {
+                color: '#f03b20',
+                weight: '3.44',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        if (feature.properties.CarJourneys >= 16.2 &&
+                feature.properties.CarJourneys <= 20.0) {
+
+            return {
+                color: '#bd0026',
+                weight: '4.24',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: '1.0',
+            }
+        }
+        }
+        var json_rnetcarjourneyssub10k2JSON = new L.geoJson(json_rnetcarjourneyssub10k2, {
+            onEachFeature: pop_rnetcarjourneyssub10k2,
+            style: doStylernetcarjourneyssub10k2
+        });
+        layerOrder[layerOrder.length] = json_rnetcarjourneyssub10k2JSON;
+        bounds_group.addLayer(json_rnetcarjourneyssub10k2JSON);
+        function pop_rnetbusjourneys3(feature, layer) {
+        }
+
+        function doStylernetbusjourneys3(feature) {
+            return {
+                weight: 3.44,
+                color: '#33a02c',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0
+            };
+        }
+        var json_rnetbusjourneys3JSON = new L.geoJson(json_rnetbusjourneys3, {
+            onEachFeature: pop_rnetbusjourneys3,
+            style: doStylernetbusjourneys3
+        });
+        layerOrder[layerOrder.length] = json_rnetbusjourneys3JSON;
+        bounds_group.addLayer(json_rnetbusjourneys3JSON);
+        feature_group.addLayer(json_rnetbusjourneys3JSON);
+        function pop_railwaystations4(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylerailwaystations4() {
+            return {
+                radius: 2.0,
+                fillColor: '#7b3f8b',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerrailwaystations4(feature, latlng) {
+            return L.circleMarker(latlng, doStylerailwaystations4())
+        }
+        var json_railwaystations4JSON = new L.geoJson(json_railwaystations4, {
+            onEachFeature: pop_railwaystations4, 
+            pointToLayer: doPointToLayerrailwaystations4
+            });
+        layerOrder[layerOrder.length] = json_railwaystations4JSON;
+
+        bounds_group.addLayer(json_railwaystations4JSON);
+        feature_group.addLayer(json_railwaystations4JSON);
+        function pop_ldlocalauthority5(feature, layer) {
+        }
+
+        function doStyleldlocalauthority5(feature) {
+            return {
+                weight: 0.86,
+                color: '#000000',
+                fillColor: '#000000',
+                dashArray: '',
+                lineCap: 'square',
+                lineJoin: 'bevel',
+                opacity: 1.0,
+                fillOpacity: 0.0
+            };
+        }
+        var json_ldlocalauthority5JSON = new L.geoJson(json_ldlocalauthority5, {
+            onEachFeature: pop_ldlocalauthority5,
+            style: doStyleldlocalauthority5
+        });
+        layerOrder[layerOrder.length] = json_ldlocalauthority5JSON;
+        bounds_group.addLayer(json_ldlocalauthority5JSON);
+        feature_group.addLayer(json_ldlocalauthority5JSON);
+        function pop_hostels6(feature, layer) {
+        }
+
+        function doStylehostels6() {
+            return {
+                radius: 4.0,
+                fillColor: '#ff7f00',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerhostels6(feature, latlng) {
+            return L.circleMarker(latlng, doStylehostels6())
+        }
+        var json_hostels6JSON = new L.geoJson(json_hostels6, {
+            onEachFeature: pop_hostels6, 
+            pointToLayer: doPointToLayerhostels6
+            });
+        layerOrder[layerOrder.length] = json_hostels6JSON;
+
+        bounds_group.addLayer(json_hostels6JSON);
+        function pop_electricbicyclenetwork7(feature, layer) {
+        }
+
+        function doStyleelectricbicyclenetwork7() {
+            return {
+                radius: 3.0,
+                fillColor: '#b2df8a',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerelectricbicyclenetwork7(feature, latlng) {
+            return L.circleMarker(latlng, doStyleelectricbicyclenetwork7())
+        }
+        var json_electricbicyclenetwork7JSON = new L.geoJson(json_electricbicyclenetwork7, {
+            onEachFeature: pop_electricbicyclenetwork7, 
+            pointToLayer: doPointToLayerelectricbicyclenetwork7
+            });
+        layerOrder[layerOrder.length] = json_electricbicyclenetwork7JSON;
+
+        bounds_group.addLayer(json_electricbicyclenetwork7JSON);
+        function pop_cyclehireshops8(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr><tr><th scope="row">id</th><td>' + (feature.properties['id'] !== null ? Autolinker.link(String(feature.properties['id'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylecyclehireshops8() {
+            return {
+                radius: 3.0,
+                fillColor: '#fb9a99',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayercyclehireshops8(feature, latlng) {
+            return L.circleMarker(latlng, doStylecyclehireshops8())
+        }
+        var json_cyclehireshops8JSON = new L.geoJson(json_cyclehireshops8, {
+            onEachFeature: pop_cyclehireshops8, 
+            pointToLayer: doPointToLayercyclehireshops8
+            });
+        layerOrder[layerOrder.length] = json_cyclehireshops8JSON;
+
+        bounds_group.addLayer(json_cyclehireshops8JSON);
+        function pop_collisions9(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">severity</th><td>' + (feature.properties['severity'] !== null ? Autolinker.link(String(feature.properties['severity'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylecollisions9() {
+            return {
+                radius: 4.0,
+                fillColor: '#e31a1c',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayercollisions9(feature, latlng) {
+            return L.circleMarker(latlng, doStylecollisions9())
+        }
+        var json_collisions9JSON = new L.geoJson(json_collisions9, {
+            onEachFeature: pop_collisions9, 
+            pointToLayer: doPointToLayercollisions9
+            });
+        var cluster_groupcollisions9JSON = new L.MarkerClusterGroup({showCoverageOnHover: false});
+        cluster_groupcollisions9JSON.addLayer(json_collisions9JSON);
+
+        layerOrder[layerOrder.length] = cluster_groupcollisions9JSON;
+
+        bounds_group.addLayer(json_collisions9JSON);
+        function pop_busstops10(feature, layer) {
+        }
+
+        function doStylebusstops10() {
+            return {
+                radius: 2.0,
+                fillColor: '#1f78b4',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerbusstops10(feature, latlng) {
+            return L.circleMarker(latlng, doStylebusstops10())
+        }
+        var json_busstops10JSON = new L.geoJson(json_busstops10, {
+            onEachFeature: pop_busstops10, 
+            pointToLayer: doPointToLayerbusstops10
+            });
+        layerOrder[layerOrder.length] = json_busstops10JSON;
+
+        bounds_group.addLayer(json_busstops10JSON);
+        function pop_bicyclehirefromOSM11(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylebicyclehirefromOSM11() {
+            return {
+                radius: 2.0,
+                fillColor: '#8f454f',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerbicyclehirefromOSM11(feature, latlng) {
+            return L.circleMarker(latlng, doStylebicyclehirefromOSM11())
+        }
+        var json_bicyclehirefromOSM11JSON = new L.geoJson(json_bicyclehirefromOSM11, {
+            onEachFeature: pop_bicyclehirefromOSM11, 
+            pointToLayer: doPointToLayerbicyclehirefromOSM11
+            });
+        layerOrder[layerOrder.length] = json_bicyclehirefromOSM11JSON;
+
+        bounds_group.addLayer(json_bicyclehirefromOSM11JSON);
+        raster_group.addTo(map);
+        feature_group.addTo(map);
+        var baseMaps = {'Thunderforest Cycle': basemap0, 'Stamen Toner': basemap1};
+        L.control.layers(baseMaps,{'<img src="legend/bicyclehirefromOSM11.png" /> bicyclehirefromOSM': json_bicyclehirefromOSM11JSON,'<img src="legend/busstops10.png" /> busstops': json_busstops10JSON,'<img src="legend/collisions9.png" /> collisions': cluster_groupcollisions9JSON,'<img src="legend/cyclehireshops8.png" /> cyclehireshops': json_cyclehireshops8JSON,'<img src="legend/electricbicyclenetwork7.png" /> electricbicyclenetwork': json_electricbicyclenetwork7JSON,'<img src="legend/hostels6.png" /> hostels': json_hostels6JSON,'<img src="legend/ldlocalauthority5.png" /> ld-local-authority': json_ldlocalauthority5JSON,'<img src="legend/railwaystations4.png" /> railwaystations': json_railwaystations4JSON,'<img src="legend/rnetbusjourneys3.png" /> rnet-bus-journeys': json_rnetbusjourneys3JSON,'rnet-car-journeys-sub10k<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_162000200000.png" />  16.2000 - 20.0000 <br />': json_rnetcarjourneyssub10k2JSON,'rnet-cycle-journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_1000028000.png" />  1.0000 - 2.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_2800046000.png" />  2.8000 - 4.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_4600064000.png" />  4.6000 - 6.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_6400082000.png" />  6.4000 - 8.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_82000100000.png" />  8.2000 - 10.0000 <br />': json_rnetcyclejourneys1JSON,'<img src="legend/viewpoints0.png" /> viewpoints': json_viewpoints0JSON,},{collapsed:false}).addTo(map);
+        L.control.scale({options: {position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}}).addTo(map);
+        stackLayers();
+        map.on('overlayadd', restackLayers);
+        </script>
+    </body>
+</html>
