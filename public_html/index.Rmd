@@ -26,9 +26,9 @@ Here you can find some of the outputs for the CycleStreets.net team for the
 
 ## Figures and code
 
-A picture can tell a thousand words. The figures and code snippets showed below help show what we've been up to!
+A picture can tell a story of a thousand words. The figures and code snippets showed below help show what we've been up to!
 
-A key challange was to process the origin-destination dataset of visitor travel demand so it could be displayed in a meaningful way on a map. The first stage was to extract the data from the proprietary .xls format and put it into an open source software friendly [csv file, which also displays natively on GitHub](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv). This was done with the following code:
+A key challenge was to process the origin-destination dataset of visitor travel demand so it could be displayed in a meaningful way on a map. The first stage was to extract the data from the proprietary .xls format and put it into an open source software friendly [csv file, which also displays natively on GitHub](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv). This was done with the following code:
 
 ```{r, eval=FALSE}
 f = "data/LD%20origin-destination%20summary.xls"
