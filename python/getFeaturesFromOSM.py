@@ -6,14 +6,6 @@ import overpy
 import geojson
 
 from optparse import OptionParser
-parser = OptionParser()
-parser.add_option("-f", "--file", dest="filename",
-                          help="write report to FILE", metavar="FILE")
-parser.add_option("-q", "--quiet",
-                          action="store_false", dest="verbose", default=True,
-                                            help="don't print status messages to stdout")
-
-(options, args) = parser.parse_args()
 
 def getbbox():
     boxjsonurl = "https://raw.githubusercontent.com/cyclestreets/transporthack/master/geodata/ld-local-authority-bbox.geojson"
@@ -76,11 +68,21 @@ if __name__ == "__main__":
             );
             out;
         """
+    elif options.query == "routes":
+        qstr = """
+            [out:json][timeout:25];
+            (
+              relation["type"="route"]["route"="bicycle"](%f,%f,%f,%f)""" % bbox + """
+            );
+            out;
+        """
     else:
         print "query not implemented: ", options.query
         sys.exit()
 
     r = queryOSM(qstr)
+    print r, r.__dict__
+    sys.exit()
 
     fl = overpass2geojson(r)
 
