@@ -25,27 +25,24 @@
         }
         </style>
         <title></title>
-
-    <!-- Journey planner -->
+		 <!-- Journey planner -->
     <script src="../js/journeyplanner.js"></script>
-
     </head>
     <body>
         <div id="map">
         </div>
-        <script src="data/json_viewpoints0.js"></script>
-        <script src="data/json_rnetcyclejourneys1.js"></script>
-        <script src="data/json_rnetcarjourneyssub10k2.js"></script>
-        <script src="data/json_rnetbusjourneys3.js"></script>
-        <script src="data/json_railwaystations4.js"></script>
-        <script src="data/json_ldlocalauthority5.js"></script>
-        <script src="data/json_hostels6.js"></script>
-        <script src="data/json_electricbicyclenetwork7.js"></script>
-        <script src="data/json_cyclehireshops8.js"></script>
-        <script src="data/json_collisions9.js"></script>
-        <script src="data/json_top7arrivals10.js"></script>
-        <script src="data/json_busstops11.js"></script>
-        <script src="data/json_bicyclehirefromOSM12.js"></script>
+        <script src="data/json_SouthLakesLocalAuthority0.js"></script>
+        <script src="data/json_Currentcyclejourneys1.js"></script>
+        <script src="data/json_Replaceablecarjourneys2.js"></script>
+        <script src="data/json_BusNetwork3.js"></script>
+        <script src="data/json_viewpoints4.js"></script>
+        <script src="data/json_hostels5.js"></script>
+        <script src="data/json_railwaystations6.js"></script>
+        <script src="data/json_Busstops7.js"></script>
+        <script src="data/json_CycleShops8.js"></script>
+        <script src="data/json_CurrenteBicycleHire9.js"></script>
+        <script src="data/json_CurrentBicycleHire10.js"></script>
+        <script src="data/json_Populardestinations11.js"></script>
         <script>
         L.ImageOverlay.include({
             getBounds: function () {
@@ -53,25 +50,25 @@
             }
         });
         var map = L.map('map', {
-            zoomControl:true, maxZoom:28, minZoom:8
-        }).fitBounds([[54.3253980105,-3.24686053539],[54.5072179074,-2.67720162162]]);
+            zoomControl:true, maxZoom:28, minZoom:1
+        }).fitBounds([[54.2691927699,-3.1844771385],[54.4639854396,-2.61481822473]]);
         var hash = new L.Hash(map);
         map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         var feature_group = new L.featureGroup([]);
         var bounds_group = new L.featureGroup([]);
         var raster_group = new L.LayerGroup([]);
-        var basemap0 = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>',
             maxZoom: 28
         });
         basemap0.addTo(map);
-        var basemap1 = L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png', {
+        var basemap1 = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             maxZoom: 28
         });
         basemap1.addTo(map);
-        var basemap2 = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        var basemap2 = L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             maxZoom: 28
         });
         basemap2.addTo(map);
@@ -88,44 +85,38 @@
             }
         }
         layerControl = L.control.layers({},{},{collapsed:false});
-        function pop_viewpoints0(feature, layer) {
+        function pop_SouthLakesLocalAuthority0(feature, layer) {
         }
 
-        function doStyleviewpoints0() {
+        function doStyleSouthLakesLocalAuthority0(feature) {
             return {
-                radius: 3.0,
-                fillColor: '#fb9a99',
+                weight: 8.4,
                 color: '#000000',
-                weight: 0.0,
-                opacity: 1.0,
                 dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                fillOpacity: 1.0
-            }
+                lineCap: 'round',
+                lineJoin: 'round',
+                opacity: 1.0
+            };
         }
-        function doPointToLayerviewpoints0(feature, latlng) {
-            return L.circleMarker(latlng, doStyleviewpoints0())
-        }
-        var json_viewpoints0JSON = new L.geoJson(json_viewpoints0, {
-            onEachFeature: pop_viewpoints0, 
-            pointToLayer: doPointToLayerviewpoints0
-            });
-        layerOrder[layerOrder.length] = json_viewpoints0JSON;
-
-        bounds_group.addLayer(json_viewpoints0JSON);
-        function pop_rnetcyclejourneys1(feature, layer) {
+        var json_SouthLakesLocalAuthority0JSON = new L.geoJson(json_SouthLakesLocalAuthority0, {
+            onEachFeature: pop_SouthLakesLocalAuthority0,
+            style: doStyleSouthLakesLocalAuthority0
+        });
+        layerOrder[layerOrder.length] = json_SouthLakesLocalAuthority0JSON;
+        bounds_group.addLayer(json_SouthLakesLocalAuthority0JSON);
+        feature_group.addLayer(json_SouthLakesLocalAuthority0JSON);
+        function pop_Currentcyclejourneys1(feature, layer) {
             var popupContent = '<table><tr><th scope="row">CycleJourneys</th><td>' + (feature.properties['CycleJourneys'] !== null ? Autolinker.link(String(feature.properties['CycleJourneys'])) : '') + '</td></tr><tr><th scope="row">CycleJourneys</th><td>' + (feature.properties['CycleJourneys'] !== null ? Autolinker.link(String(feature.properties['CycleJourneys'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStylernetcyclejourneys1(feature) {
+        function doStyleCurrentcyclejourneys1(feature) {
         if (feature.properties.CycleJourneys >= 1.0 &&
                 feature.properties.CycleJourneys <= 2.8) {
 
             return {
                 color: '#ffffb2',
-                weight: '1.04',
+                weight: '2.64',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -137,7 +128,7 @@
 
             return {
                 color: '#fecc5c',
-                weight: '1.84',
+                weight: '3.44',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -149,7 +140,7 @@
 
             return {
                 color: '#fd8d3c',
-                weight: '2.64',
+                weight: '5.04',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -161,7 +152,7 @@
 
             return {
                 color: '#f03b20',
-                weight: '3.44',
+                weight: '5.84',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -173,7 +164,7 @@
 
             return {
                 color: '#bd0026',
-                weight: '4.24',
+                weight: '6.64',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -181,24 +172,25 @@
             }
         }
         }
-        var json_rnetcyclejourneys1JSON = new L.geoJson(json_rnetcyclejourneys1, {
-            onEachFeature: pop_rnetcyclejourneys1,
-            style: doStylernetcyclejourneys1
+        var json_Currentcyclejourneys1JSON = new L.geoJson(json_Currentcyclejourneys1, {
+            onEachFeature: pop_Currentcyclejourneys1,
+            style: doStyleCurrentcyclejourneys1
         });
-        layerOrder[layerOrder.length] = json_rnetcyclejourneys1JSON;
-        bounds_group.addLayer(json_rnetcyclejourneys1JSON);
-        function pop_rnetcarjourneyssub10k2(feature, layer) {
+        layerOrder[layerOrder.length] = json_Currentcyclejourneys1JSON;
+        bounds_group.addLayer(json_Currentcyclejourneys1JSON);
+        feature_group.addLayer(json_Currentcyclejourneys1JSON);
+        function pop_Replaceablecarjourneys2(feature, layer) {
             var popupContent = '<table><tr><th scope="row">CarJourneys</th><td>' + (feature.properties['CarJourneys'] !== null ? Autolinker.link(String(feature.properties['CarJourneys'])) : '') + '</td></tr><tr><th scope="row">CarJourneys</th><td>' + (feature.properties['CarJourneys'] !== null ? Autolinker.link(String(feature.properties['CarJourneys'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStylernetcarjourneyssub10k2(feature) {
+        function doStyleReplaceablecarjourneys2(feature) {
         if (feature.properties.CarJourneys >= 1.0 &&
                 feature.properties.CarJourneys <= 4.8) {
 
             return {
                 color: '#ffffb2',
-                weight: '1.04',
+                weight: '2.64',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -210,7 +202,7 @@
 
             return {
                 color: '#fecc5c',
-                weight: '1.84',
+                weight: '3.44',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -222,7 +214,7 @@
 
             return {
                 color: '#fd8d3c',
-                weight: '2.64',
+                weight: '4.24',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -234,7 +226,7 @@
 
             return {
                 color: '#f03b20',
-                weight: '3.44',
+                weight: '5.04',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -246,7 +238,7 @@
 
             return {
                 color: '#bd0026',
-                weight: '4.24',
+                weight: '5.84',
                 dashArray: '',
                 lineCap: 'square',
                 lineJoin: 'bevel',
@@ -254,18 +246,19 @@
             }
         }
         }
-        var json_rnetcarjourneyssub10k2JSON = new L.geoJson(json_rnetcarjourneyssub10k2, {
-            onEachFeature: pop_rnetcarjourneyssub10k2,
-            style: doStylernetcarjourneyssub10k2
+        var json_Replaceablecarjourneys2JSON = new L.geoJson(json_Replaceablecarjourneys2, {
+            onEachFeature: pop_Replaceablecarjourneys2,
+            style: doStyleReplaceablecarjourneys2
         });
-        layerOrder[layerOrder.length] = json_rnetcarjourneyssub10k2JSON;
-        bounds_group.addLayer(json_rnetcarjourneyssub10k2JSON);
-        function pop_rnetbusjourneys3(feature, layer) {
+        layerOrder[layerOrder.length] = json_Replaceablecarjourneys2JSON;
+        bounds_group.addLayer(json_Replaceablecarjourneys2JSON);
+        feature_group.addLayer(json_Replaceablecarjourneys2JSON);
+        function pop_BusNetwork3(feature, layer) {
         }
 
-        function doStylernetbusjourneys3(feature) {
+        function doStyleBusNetwork3(feature) {
             return {
-                weight: 3.44,
+                weight: 6.0,
                 color: '#33a02c',
                 dashArray: '',
                 lineCap: 'square',
@@ -273,97 +266,78 @@
                 opacity: 1.0
             };
         }
-        var json_rnetbusjourneys3JSON = new L.geoJson(json_rnetbusjourneys3, {
-            onEachFeature: pop_rnetbusjourneys3,
-            style: doStylernetbusjourneys3
+        var json_BusNetwork3JSON = new L.geoJson(json_BusNetwork3, {
+            onEachFeature: pop_BusNetwork3,
+            style: doStyleBusNetwork3
         });
-        layerOrder[layerOrder.length] = json_rnetbusjourneys3JSON;
-        bounds_group.addLayer(json_rnetbusjourneys3JSON);
-        feature_group.addLayer(json_rnetbusjourneys3JSON);
-        function pop_railwaystations4(feature, layer) {
+        layerOrder[layerOrder.length] = json_BusNetwork3JSON;
+        bounds_group.addLayer(json_BusNetwork3JSON);
+        feature_group.addLayer(json_BusNetwork3JSON);
+        function pop_viewpoints4(feature, layer) {
+        }
+
+        function doStyleviewpoints4() {
+            return {
+                radius: 3.0,
+                fillColor: '#a6cee3',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerviewpoints4(feature, latlng) {
+            return L.circleMarker(latlng, doStyleviewpoints4())
+        }
+        var json_viewpoints4JSON = new L.geoJson(json_viewpoints4, {
+            onEachFeature: pop_viewpoints4, 
+            pointToLayer: doPointToLayerviewpoints4
+            });
+        layerOrder[layerOrder.length] = json_viewpoints4JSON;
+
+        bounds_group.addLayer(json_viewpoints4JSON);
+        feature_group.addLayer(json_viewpoints4JSON);
+        function pop_hostels5(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStylehostels5() {
+            return {
+                radius: 3.0,
+                fillColor: '#1526e3',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerhostels5(feature, latlng) {
+            return L.circleMarker(latlng, doStylehostels5())
+        }
+        var json_hostels5JSON = new L.geoJson(json_hostels5, {
+            onEachFeature: pop_hostels5, 
+            pointToLayer: doPointToLayerhostels5
+            });
+        layerOrder[layerOrder.length] = json_hostels5JSON;
+
+        bounds_group.addLayer(json_hostels5JSON);
+        feature_group.addLayer(json_hostels5JSON);
+        function pop_railwaystations6(feature, layer) {
             var popupContent = '<table><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStylerailwaystations4() {
-            return {
-                radius: 2.0,
-                fillColor: '#7b3f8b',
-                color: '#000000',
-                weight: 0.0,
-                opacity: 1.0,
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                fillOpacity: 1.0
-            }
-        }
-        function doPointToLayerrailwaystations4(feature, latlng) {
-            return L.circleMarker(latlng, doStylerailwaystations4())
-        }
-        var json_railwaystations4JSON = new L.geoJson(json_railwaystations4, {
-            onEachFeature: pop_railwaystations4, 
-            pointToLayer: doPointToLayerrailwaystations4
-            });
-        layerOrder[layerOrder.length] = json_railwaystations4JSON;
-
-        bounds_group.addLayer(json_railwaystations4JSON);
-        feature_group.addLayer(json_railwaystations4JSON);
-        function pop_ldlocalauthority5(feature, layer) {
-        }
-
-        function doStyleldlocalauthority5(feature) {
-            return {
-                weight: 0.86,
-                color: '#000000',
-                fillColor: '#000000',
-                dashArray: '',
-                lineCap: 'square',
-                lineJoin: 'bevel',
-                opacity: 1.0,
-                fillOpacity: 0.0
-            };
-        }
-        var json_ldlocalauthority5JSON = new L.geoJson(json_ldlocalauthority5, {
-            onEachFeature: pop_ldlocalauthority5,
-            style: doStyleldlocalauthority5
-        });
-        layerOrder[layerOrder.length] = json_ldlocalauthority5JSON;
-        bounds_group.addLayer(json_ldlocalauthority5JSON);
-        feature_group.addLayer(json_ldlocalauthority5JSON);
-        function pop_hostels6(feature, layer) {
-        }
-
-        function doStylehostels6() {
-            return {
-                radius: 4.0,
-                fillColor: '#ff7f00',
-                color: '#000000',
-                weight: 0.0,
-                opacity: 1.0,
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                fillOpacity: 1.0
-            }
-        }
-        function doPointToLayerhostels6(feature, latlng) {
-            return L.circleMarker(latlng, doStylehostels6())
-        }
-        var json_hostels6JSON = new L.geoJson(json_hostels6, {
-            onEachFeature: pop_hostels6, 
-            pointToLayer: doPointToLayerhostels6
-            });
-        layerOrder[layerOrder.length] = json_hostels6JSON;
-
-        bounds_group.addLayer(json_hostels6JSON);
-        function pop_electricbicyclenetwork7(feature, layer) {
-        }
-
-        function doStyleelectricbicyclenetwork7() {
+        function doStylerailwaystations6() {
             return {
                 radius: 3.0,
-                fillColor: '#b2df8a',
+                fillColor: '#000000',
                 color: '#000000',
                 weight: 0.0,
                 opacity: 1.0,
@@ -373,22 +347,50 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayerelectricbicyclenetwork7(feature, latlng) {
-            return L.circleMarker(latlng, doStyleelectricbicyclenetwork7())
+        function doPointToLayerrailwaystations6(feature, latlng) {
+            return L.circleMarker(latlng, doStylerailwaystations6())
         }
-        var json_electricbicyclenetwork7JSON = new L.geoJson(json_electricbicyclenetwork7, {
-            onEachFeature: pop_electricbicyclenetwork7, 
-            pointToLayer: doPointToLayerelectricbicyclenetwork7
+        var json_railwaystations6JSON = new L.geoJson(json_railwaystations6, {
+            onEachFeature: pop_railwaystations6, 
+            pointToLayer: doPointToLayerrailwaystations6
             });
-        layerOrder[layerOrder.length] = json_electricbicyclenetwork7JSON;
+        layerOrder[layerOrder.length] = json_railwaystations6JSON;
 
-        bounds_group.addLayer(json_electricbicyclenetwork7JSON);
-        function pop_cyclehireshops8(feature, layer) {
+        bounds_group.addLayer(json_railwaystations6JSON);
+        feature_group.addLayer(json_railwaystations6JSON);
+        function pop_Busstops7(feature, layer) {
+        }
+
+        function doStyleBusstops7() {
+            return {
+                radius: 3.0,
+                fillColor: '#33a02c',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerBusstops7(feature, latlng) {
+            return L.circleMarker(latlng, doStyleBusstops7())
+        }
+        var json_Busstops7JSON = new L.geoJson(json_Busstops7, {
+            onEachFeature: pop_Busstops7, 
+            pointToLayer: doPointToLayerBusstops7
+            });
+        layerOrder[layerOrder.length] = json_Busstops7JSON;
+
+        bounds_group.addLayer(json_Busstops7JSON);
+        feature_group.addLayer(json_Busstops7JSON);
+        function pop_CycleShops8(feature, layer) {
             var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr><tr><th scope="row">id</th><td>' + (feature.properties['id'] !== null ? Autolinker.link(String(feature.properties['id'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStylecyclehireshops8() {
+        function doStyleCycleShops8() {
             return {
                 radius: 3.0,
                 fillColor: '#fb9a99',
@@ -401,24 +403,25 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayercyclehireshops8(feature, latlng) {
-            return L.circleMarker(latlng, doStylecyclehireshops8())
+        function doPointToLayerCycleShops8(feature, latlng) {
+            return L.circleMarker(latlng, doStyleCycleShops8())
         }
-        var json_cyclehireshops8JSON = new L.geoJson(json_cyclehireshops8, {
-            onEachFeature: pop_cyclehireshops8, 
-            pointToLayer: doPointToLayercyclehireshops8
+        var json_CycleShops8JSON = new L.geoJson(json_CycleShops8, {
+            onEachFeature: pop_CycleShops8, 
+            pointToLayer: doPointToLayerCycleShops8
             });
-        layerOrder[layerOrder.length] = json_cyclehireshops8JSON;
+        layerOrder[layerOrder.length] = json_CycleShops8JSON;
 
-        bounds_group.addLayer(json_cyclehireshops8JSON);
-        function pop_collisions9(feature, layer) {
-            var popupContent = '<table><tr><th scope="row">severity</th><td>' + (feature.properties['severity'] !== null ? Autolinker.link(String(feature.properties['severity'])) : '') + '</td></tr></table>';
+        bounds_group.addLayer(json_CycleShops8JSON);
+        feature_group.addLayer(json_CycleShops8JSON);
+        function pop_CurrenteBicycleHire9(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">description</th><td>' + (feature.properties['description'] !== null ? Autolinker.link(String(feature.properties['description'])) : '') + '</td></tr><tr><th scope="row">latitude</th><td>' + (feature.properties['latitude'] !== null ? Autolinker.link(String(feature.properties['latitude'])) : '') + '</td></tr><tr><th scope="row">longitude</th><td>' + (feature.properties['longitude'] !== null ? Autolinker.link(String(feature.properties['longitude'])) : '') + '</td></tr><tr><th scope="row">4</th><td>' + (feature.properties['4'] !== null ? Autolinker.link(String(feature.properties['4'])) : '') + '</td></tr><tr><th scope="row">hirePoint</th><td>' + (feature.properties['hirePoint'] !== null ? Autolinker.link(String(feature.properties['hirePoint'])) : '') + '</td></tr><tr><th scope="row">chargePoint</th><td>' + (feature.properties['chargePoint'] !== null ? Autolinker.link(String(feature.properties['chargePoint'])) : '') + '</td></tr><tr><th scope="row">accommodation</th><td>' + (feature.properties['accommodation'] !== null ? Autolinker.link(String(feature.properties['accommodation'])) : '') + '</td></tr><tr><th scope="row">foodAndDrink</th><td>' + (feature.properties['foodAndDrink'] !== null ? Autolinker.link(String(feature.properties['foodAndDrink'])) : '') + '</td></tr><tr><th scope="row">place</th><td>' + (feature.properties['place'] !== null ? Autolinker.link(String(feature.properties['place'])) : '') + '</td></tr><tr><th scope="row">numberElectricBikes</th><td>' + (feature.properties['numberElectricBikes'] !== null ? Autolinker.link(String(feature.properties['numberElectricBikes'])) : '') + '</td></tr><tr><th scope="row">regularBikes</th><td>' + (feature.properties['regularBikes'] !== null ? Autolinker.link(String(feature.properties['regularBikes'])) : '') + '</td></tr><tr><th scope="row">url</th><td>' + (feature.properties['url'] !== null ? Autolinker.link(String(feature.properties['url'])) : '') + '</td></tr><tr><th scope="row">image</th><td>' + (feature.properties['image'] !== null ? Autolinker.link(String(feature.properties['image'])) : '') + '</td></tr><tr><th scope="row">address</th><td>' + (feature.properties['address'] !== null ? Autolinker.link(String(feature.properties['address'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStylecollisions9() {
+        function doStyleCurrenteBicycleHire9() {
             return {
-                radius: 4.0,
+                radius: 3.0,
                 fillColor: '#e31a1c',
                 color: '#000000',
                 weight: 0.0,
@@ -429,22 +432,52 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayercollisions9(feature, latlng) {
-            return L.circleMarker(latlng, doStylecollisions9())
+        function doPointToLayerCurrenteBicycleHire9(feature, latlng) {
+            return L.circleMarker(latlng, doStyleCurrenteBicycleHire9())
         }
-        var json_collisions9JSON = new L.geoJson(json_collisions9, {
-            onEachFeature: pop_collisions9, 
-            pointToLayer: doPointToLayercollisions9
+        var json_CurrenteBicycleHire9JSON = new L.geoJson(json_CurrenteBicycleHire9, {
+            onEachFeature: pop_CurrenteBicycleHire9, 
+            pointToLayer: doPointToLayerCurrenteBicycleHire9
             });
-        layerOrder[layerOrder.length] = json_collisions9JSON;
+        layerOrder[layerOrder.length] = json_CurrenteBicycleHire9JSON;
 
-        bounds_group.addLayer(json_collisions9JSON);
-        function pop_top7arrivals10(feature, layer) {
+        bounds_group.addLayer(json_CurrenteBicycleHire9JSON);
+        feature_group.addLayer(json_CurrenteBicycleHire9JSON);
+        function pop_CurrentBicycleHire10(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStyleCurrentBicycleHire10() {
+            return {
+                radius: 3.0,
+                fillColor: '#ff7f00',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerCurrentBicycleHire10(feature, latlng) {
+            return L.circleMarker(latlng, doStyleCurrentBicycleHire10())
+        }
+        var json_CurrentBicycleHire10JSON = new L.geoJson(json_CurrentBicycleHire10, {
+            onEachFeature: pop_CurrentBicycleHire10, 
+            pointToLayer: doPointToLayerCurrentBicycleHire10
+            });
+        layerOrder[layerOrder.length] = json_CurrentBicycleHire10JSON;
+
+        bounds_group.addLayer(json_CurrentBicycleHire10JSON);
+        feature_group.addLayer(json_CurrentBicycleHire10JSON);
+        function pop_Populardestinations11(feature, layer) {
             var popupContent = '<table><tr><th scope="row">Name</th><td>' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td></tr><tr><th scope="row">lon</th><td>' + (feature.properties['lon'] !== null ? Autolinker.link(String(feature.properties['lon'])) : '') + '</td></tr><tr><th scope="row">lat</th><td>' + (feature.properties['lat'] !== null ? Autolinker.link(String(feature.properties['lat'])) : '') + '</td></tr><tr><th scope="row">Arrivals</th><td>' + (feature.properties['Arrivals'] !== null ? Autolinker.link(String(feature.properties['Arrivals'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStyletop7arrivals10(feature) {
+        function doStylePopulardestinations11(feature) {
         if (feature.properties.Arrivals >= 108.0 &&
                 feature.properties.Arrivals <= 403.4) {
 
@@ -463,7 +496,7 @@
                 feature.properties.Arrivals <= 698.8) {
 
             return {
-                radius: '2.4',
+                radius: '2.5',
                 fillColor: '#b3cde3',
                 color: '#000000',
                 weight: 0.0,
@@ -491,7 +524,7 @@
                 feature.properties.Arrivals <= 1289.6) {
 
             return {
-                radius: '3.8',
+                radius: '3.5',
                 fillColor: '#8856a7',
                 color: '#000000',
                 weight: 0.0,
@@ -505,7 +538,7 @@
                 feature.properties.Arrivals <= 1585.0) {
 
             return {
-                radius: '5.0',
+                radius: '4.0',
                 fillColor: '#810f7c',
                 color: '#000000',
                 weight: 0.0,
@@ -516,74 +549,20 @@
         }
 
         }
-        var json_top7arrivals10JSON = new L.geoJson(json_top7arrivals10, {
-            onEachFeature: pop_top7arrivals10,
+        var json_Populardestinations11JSON = new L.geoJson(json_Populardestinations11, {
+            onEachFeature: pop_Populardestinations11,
             pointToLayer: function (feature, latlng) {
-                return L.circleMarker(latlng, doStyletop7arrivals10(feature))
+                return L.circleMarker(latlng, doStylePopulardestinations11(feature))
             }
         });
-        layerOrder[layerOrder.length] = json_top7arrivals10JSON;
+        layerOrder[layerOrder.length] = json_Populardestinations11JSON;
 
-        bounds_group.addLayer(json_top7arrivals10JSON);
-        feature_group.addLayer(json_top7arrivals10JSON);
-        function pop_busstops11(feature, layer) {
-        }
-
-        function doStylebusstops11() {
-            return {
-                radius: 2.0,
-                fillColor: '#1f78b4',
-                color: '#000000',
-                weight: 0.0,
-                opacity: 1.0,
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                fillOpacity: 1.0
-            }
-        }
-        function doPointToLayerbusstops11(feature, latlng) {
-            return L.circleMarker(latlng, doStylebusstops11())
-        }
-        var json_busstops11JSON = new L.geoJson(json_busstops11, {
-            onEachFeature: pop_busstops11, 
-            pointToLayer: doPointToLayerbusstops11
-            });
-        layerOrder[layerOrder.length] = json_busstops11JSON;
-
-        bounds_group.addLayer(json_busstops11JSON);
-        function pop_bicyclehirefromOSM12(feature, layer) {
-            var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr></table>';
-            layer.bindPopup(popupContent);
-        }
-
-        function doStylebicyclehirefromOSM12() {
-            return {
-                radius: 2.0,
-                fillColor: '#8f454f',
-                color: '#000000',
-                weight: 0.0,
-                opacity: 1.0,
-                dashArray: '',
-                lineCap: 'butt',
-                lineJoin: 'miter',
-                fillOpacity: 1.0
-            }
-        }
-        function doPointToLayerbicyclehirefromOSM12(feature, latlng) {
-            return L.circleMarker(latlng, doStylebicyclehirefromOSM12())
-        }
-        var json_bicyclehirefromOSM12JSON = new L.geoJson(json_bicyclehirefromOSM12, {
-            onEachFeature: pop_bicyclehirefromOSM12, 
-            pointToLayer: doPointToLayerbicyclehirefromOSM12
-            });
-        layerOrder[layerOrder.length] = json_bicyclehirefromOSM12JSON;
-
-        bounds_group.addLayer(json_bicyclehirefromOSM12JSON);
+        bounds_group.addLayer(json_Populardestinations11JSON);
+        feature_group.addLayer(json_Populardestinations11JSON);
         raster_group.addTo(map);
         feature_group.addTo(map);
-        var baseMaps = {'Thunderforest Cycle': basemap0, 'Thunderforest Transport': basemap1, 'OSM Standard': basemap2};
-        L.control.layers(baseMaps,{'<img src="legend/bicyclehirefromOSM12.png" /> bicyclehirefromOSM': json_bicyclehirefromOSM12JSON,'<img src="legend/busstops11.png" /> busstops': json_busstops11JSON,'top-7-arrivals<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_10800004034000.png" />  108.0000 - 403.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_40340006988000.png" />  403.4000 - 698.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_69880009942000.png" />  698.8000 - 994.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_994200012896000.png" />  994.2000 - 1289.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/top7arrivals10_1289600015850000.png" />  1289.6000 - 1585.0000 <br />': json_top7arrivals10JSON,'<img src="legend/collisions9.png" /> collisions': json_collisions9JSON,'<img src="legend/cyclehireshops8.png" /> cyclehireshops': json_cyclehireshops8JSON,'<img src="legend/electricbicyclenetwork7.png" /> electricbicyclenetwork': json_electricbicyclenetwork7JSON,'<img src="legend/hostels6.png" /> hostels': json_hostels6JSON,'<img src="legend/ldlocalauthority5.png" /> ld-local-authority': json_ldlocalauthority5JSON,'<img src="legend/railwaystations4.png" /> railwaystations': json_railwaystations4JSON,'<img src="legend/rnetbusjourneys3.png" /> rnet-bus-journeys': json_rnetbusjourneys3JSON,'rnet-car-journeys-sub10k<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcarjourneyssub10k2_162000200000.png" />  16.2000 - 20.0000 <br />': json_rnetcarjourneyssub10k2JSON,'rnet-cycle-journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_1000028000.png" />  1.0000 - 2.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_2800046000.png" />  2.8000 - 4.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_4600064000.png" />  4.6000 - 6.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_6400082000.png" />  6.4000 - 8.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/rnetcyclejourneys1_82000100000.png" />  8.2000 - 10.0000 <br />': json_rnetcyclejourneys1JSON,'<img src="legend/viewpoints0.png" /> viewpoints': json_viewpoints0JSON,},{collapsed:false}).addTo(map);
+        var baseMaps = {'OSM HOT': basemap0, 'Thunderforest Cycle': basemap1, 'Thunderforest Transport': basemap2};
+        L.control.layers(baseMaps,{'Popular destinations<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_108403.png" />  108 - 403<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_404698.png" />  404 - 698<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_699994.png" />  699 - 994<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_9951289.png" />  995- 1289<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_12901585.png" />  1290- 1585<br />': json_Populardestinations11JSON,'<img src="legend/CurrentBicycleHire10.png" /> Current Bicycle Hire': json_CurrentBicycleHire10JSON,'<img src="legend/CurrenteBicycleHire9.png" /> Current e-Bicycle Hire': json_CurrenteBicycleHire9JSON,'<img src="legend/CycleShops8.png" /> Cycle Shops': json_CycleShops8JSON,'<img src="legend/Busstops7.png" /> Bus stops': json_Busstops7JSON,'<img src="legend/railwaystations6.png" /> railwaystations': json_railwaystations6JSON,'<img src="legend/hostels5.png" /> hostels': json_hostels5JSON,'<img src="legend/viewpoints4.png" /> viewpoints': json_viewpoints4JSON,'<img src="legend/BusNetwork3.png" /> Bus Network': json_BusNetwork3JSON,'Replaceable car journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_14.png" /> 1- 4 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_58.png" /> 5 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_912.png" /> 9 - 12 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1316.png" /> 13 - 16<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1720.png" /> 17 - 20 <br />': json_Replaceablecarjourneys2JSON,'Current cycle journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_12.png" />  1 - 2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_34.png" /> 3 - 4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_56.png" /> 5 - 6 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_78.png" /> 7 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_910.png" /> 9 - 10 <br />': json_Currentcyclejourneys1JSON,'<img src="legend/SouthLakesLocalAuthority0.png" /> South Lakes Local Authority': json_SouthLakesLocalAuthority0JSON,},{collapsed:false}).addTo(map);
         L.control.scale({options: {position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}}).addTo(map);
         stackLayers();
         map.on('overlayadd', restackLayers);
