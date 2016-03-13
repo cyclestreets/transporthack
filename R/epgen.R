@@ -30,8 +30,26 @@ summary(cd$Arrivals)
 cd@data
 
 geojson_write(cd, file = "geodata/top-7-arrivals.geojson")
+write.csv(cd@data, "data/top-7-arrivals.csv")
 
-head(cents@data)
+head(cents@data, "data/")
+
+orig_data = group_by(f@data, StartDestName) %>%
+  summarise(Departures = sum(TotalTravellers))
+
+cents$Name
+plot(cents)
+proj4string(ld) = proj4string(cents)
+in_lakes = cents[ld,]
+plot(in_lakes, col = "green", add = T)
+cents_outside = cents[!cents$Name %in% in_lakes$Name,]
+
+orig_data = orig_data[orig_data$StartDestName %in% cents_outside$Name,]
+
+cd$Name
+
+top_n(orig_data, n = 20) %>% 
+  arrange(Departures)
 
 # sel = unique(f$EndDestName)
 # sel = unique(sel)
