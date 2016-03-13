@@ -5,6 +5,15 @@ import json
 import overpy
 import geojson
 
+from optparse import OptionParser
+parser = OptionParser()
+parser.add_option("-f", "--file", dest="filename",
+                          help="write report to FILE", metavar="FILE")
+parser.add_option("-q", "--quiet",
+                          action="store_false", dest="verbose", default=True,
+                                            help="don't print status messages to stdout")
+
+(options, args) = parser.parse_args()
 
 def getbbox():
     boxjsonurl = "https://raw.githubusercontent.com/cyclestreets/transporthack/master/geodata/ld-local-authority-bbox.geojson"
@@ -39,19 +48,41 @@ def overpass2geojson(r):
     fl = geojson.FeatureCollection(features)
     return fl
 
-bbox = getbbox()
-qstr = """
-    [out:json][timeout:25];
-    (
-      node["amenity"="bicycle_rental"](%f,%f,%f,%f);""" % bbox + """
-      way["amenity"="bicycle_rental"](%f,%f,%f,%f);""" % bbox + """
-      relation["amenity"="bicycle_rental"](%f,%f,%f,%f);""" % bbox + """
-    );
-    out;
-"""
+if __name__ == "__main__":
+    parser = OptionParser()
+    parser.add_option("-f", "--file", dest="filename", help="write output to FILE", metavar="FILE")
+    parser.add_option("-q", "--query", dest="query", help="what to query")
 
-r = queryOSM(qstr)
+    (options, args) = parser.parse_args()
+    bbox = getbbox()
 
-fl = overpass2geojson(r)
+    if options.query == "bicycle_rental":
+        qstr = """
+            [out:json][timeout:25];
+            (
+              node["amenity"="bicycle_rental"](%f,%f,%f,%f);""" % bbox + """
+              way["amenity"="bicycle_rental"](%f,%f,%f,%f);""" % bbox + """
+              relation["amenity"="bicycle_rental"](%f,%f,%f,%f);""" % bbox + """
+            );
+            out;
+        """
+    elif options.query == "hostel":
+        qstr = """
+            [out:json][timeout:25];
+            (
+              node["tourism"="hostel"](%f,%f,%f,%f);""" % bbox + """
+              way["tourism"="hostel"](%f,%f,%f,%f);""" % bbox + """
+              relation["tourism"="hostel"](%f,%f,%f,%f);""" % bbox + """
+            );
+            out;
+        """
+    else:
+        print "query not implemented: ", options.query
+        sys.exit()
 
-open("../geodata/bicyclehirefromOSM.geojson", "w").write(geojson.dumps(fl))
+    r = queryOSM(qstr)
+
+    fl = overpass2geojson(r)
+
+    fn = options.filename
+    open(fn, "w").write(geojson.dumps(fl))
