@@ -45,7 +45,7 @@ m = leaflet() %>%
   addLayersControl(
       baseGroups = c("network", "Replacable car trips", "Current Cycling"),
       overlayGroups = c("Boundary","Bus Stops","Bus Network","Rail station","Existing Hire","E Bike Hire","View points","Hostels","Photos"),
-      options = layersControlOptions(collapsed = True)
+      options = layersControlOptions(collapsed = TRUE)
   )
 m
 
