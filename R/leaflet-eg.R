@@ -13,21 +13,40 @@ norm_hire = geojson_read("geodata/bicyclehirefromOSM.geojson", what = "sp")
 e_hire = geojson_read("geodata/electricbicyclenetwork.geojson", what = "sp")
 photos = geojson_read("geodata/photomap.geojson", what = "sp")
 rail= geojson_read("geodata/railwaystations.geojson", what = "sp")
-viewpoints = e_hire = geojson_read("geodata/viewpoints.geojson", what = "sp")
+viewpoints = geojson_read("geodata/viewpoints.geojson", what = "sp")
+hostels = geojson_read("geodata/hostels.geojson", what = "sp")
 
+o = 0.8
+
+photo = "photo"
 
 m = leaflet() %>%
   addTiles(urlTemplate = "http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png") %>% 
-  addPolylines(data = boundary, group = "Boundary")%>%
+  addPolylines(data = boundary, color = "blue", opacity = o, group = "Boundary")%>%
+  addPolylines(data = bus_net, color = "green", opacity = o, group = "Bus Network")%>%
   addPolylines(data = core_net, weight = core_net$n, color = "blue", opacity = 0.3, group = "network" )%>%
   addPolylines(data = sub_10k_car, weight = sub_10k_car$CarJourneys, color = "blue", opacity = 0.3, group = "Replacable car trips" )%>%
   addPolylines(data = current_cycling, weight = current_cycling$CycleJourneys, color = "blue", opacity = 0.3, group = "Current Cycling" )%>%
-  addCircleMarkers(data = arrivals, radius = arrivals$Arrivals / mean(arrivals$Arrivals)* 3)%>%
-  addCircleMarkers(data = norm_hire, color = "red")%>%
+  addCircleMarkers(data = arrivals, color = "purple", opacity = o, radius = arrivals$Arrivals / mean(arrivals$Arrivals)* 3, popup = arrivals$Name)%>%
+  addCircleMarkers(data = norm_hire, color = "red", opacity = o, radius = 3, group = "Existing Hire")%>%
+  addCircleMarkers(data = bus_stops, color = "green", opacity = o, radius = 3, group = "Bus Stops")%>%
+  addCircleMarkers(data = e_hire, color = "orange", opacity = o, radius = 3, group = "E Bike Hire")%>%
+  addCircleMarkers(data = rail, color = "black", opacity = o, radius = 3, group = "Rail station", popup = rail$name)%>%
+  addCircleMarkers(data = viewpoints, color = "pink", opacity = o, radius = 3, group = "View points")%>%
+  addCircleMarkers(data = hostels, color = "yellow", opacity = o, radius = 3,  group = "Hostels", popup = hostels$name)%>%
+  addCircleMarkers(data = photos, color = "darkblue", opacity = o, radius = 3,  group = "Photos")%>%
   hideGroup ("Boundary")%>%
+  hideGroup ("Existing Hire")%>%
+  hideGroup ("Bus Stops")%>%
+  hideGroup ("E Bike Hire")%>%
+  hideGroup ("Rail station")%>%
+  hideGroup ("View points")%>%
+  hideGroup ("Hostels")%>%
+  hideGroup ("Bus Network")%>%
+  hideGroup ("Photos")%>%
   addLayersControl(
       baseGroups = c("network", "Replacable car trips", "Current Cycling"),
-      overlayGroups = c("Boundary"),
+      overlayGroups = c("Boundary","Bus Stops","Bus Network","Rail station","Existing Hire","E Bike Hire","View points","Hostels","Photos"),
       options = layersControlOptions(collapsed = FALSE)
   )
 m
