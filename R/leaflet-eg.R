@@ -18,16 +18,14 @@ hostels = geojson_read("geodata/hostels.geojson", what = "sp")
 
 o = 0.8
 
-photo = "photo"
-
 m = leaflet() %>%
   setView(lng = -2.8745246, lat = 54.3029315, zoom = 10) %>%
   addTiles(urlTemplate = "http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png") %>% 
   addPolylines(data = boundary, color = "blue", opacity = o, group = "Boundary")%>%
   addPolylines(data = bus_net, color = "green", opacity = o, group = "Bus Network")%>%
   addPolylines(data = core_net, weight = core_net$n, color = "blue", opacity = 0.3, group = "network" )%>%
-  addPolylines(data = sub_10k_car, weight = sub_10k_car$CarJourneys, color = "blue", opacity = 0.3, group = "Replacable car trips" )%>%
-  addPolylines(data = current_cycling, weight = current_cycling$CycleJourneys, color = "blue", opacity = 0.3, group = "Current Cycling" )%>%
+  addPolylines(data = sub_10k_car, weight = sub_10k_car$CarJourneys, color = "blue", opacity = 0.3, group = "Replacable car trips", popup = sub_10k_car$CarJourneys)%>%
+  addPolylines(data = current_cycling, weight = current_cycling$CycleJourneys, color = "blue", opacity = 0.3, group = "Current Cycling", popup = current_cycling$CycleJourneys)%>%
   addCircleMarkers(data = arrivals, color = "purple", opacity = o, radius = arrivals$Arrivals / mean(arrivals$Arrivals)* 3, popup = arrivals$Name)%>%
   addCircleMarkers(data = norm_hire, color = "red", opacity = o, radius = 3, group = "Existing Hire")%>%
   addCircleMarkers(data = bus_stops, color = "green", opacity = o, radius = 3, group = "Bus Stops")%>%
