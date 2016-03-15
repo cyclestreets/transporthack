@@ -24,9 +24,8 @@
             margin: 0;
         }
         </style>
-        <title></title>
-		 <!-- Journey planner -->
-    <script src="../js/journeyplanner.js"></script>
+        <title>transportHACK</title>
+		   <script src="../js/journeyplanner.js"></script>
     </head>
     <body>
         <div id="map">
@@ -43,7 +42,7 @@
         <script src="data/json_CurrenteBicycleHire9.js"></script>
         <script src="data/json_CurrentBicycleHire10.js"></script>
         <script src="data/json_Populardestinations11.js"></script>
-        <script src="data/json_Proposednetwork12.js"></script>
+        <script src="data/json_Corecyclenetwork12.js"></script>
         <script>
         L.ImageOverlay.include({
             getBounds: function () {
@@ -52,18 +51,18 @@
         });
         var map = L.map('map', {
             zoomControl:true, maxZoom:28, minZoom:1
-        }).fitBounds([[54.2691927699,-3.1844771385],[54.4639854396,-2.61481822473]]);
+        }).fitBounds([[53.9340415994,-3.69804272378],[54.7517166351,-1.4194070687]]);
         var hash = new L.Hash(map);
         map.attributionControl.addAttribution('<a href="https://github.com/tomchadwin/qgis2web" target="_blank">qgis2web</a>');
         var feature_group = new L.featureGroup([]);
         var bounds_group = new L.featureGroup([]);
         var raster_group = new L.LayerGroup([]);
-        var basemap0 = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
-            attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
+        var basemap0 = L.tileLayer('http://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>,Tiles courtesy of <a href="http://hot.openstreetmap.org/" target="_blank">Humanitarian OpenStreetMap Team</a>',
             maxZoom: 28
         });
         basemap0.addTo(map);
-        var basemap1 = L.tileLayer('http://{s}.tile.thunderforest.com/transport/{z}/{x}/{y}.png', {
+        var basemap1 = L.tileLayer('http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png', {
             attribution: '&copy; <a href="http://www.opencyclemap.org">OpenCycleMap</a>,&copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors,<a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>',
             maxZoom: 28
         });
@@ -555,10 +554,10 @@
 
         bounds_group.addLayer(json_Populardestinations11JSON);
         feature_group.addLayer(json_Populardestinations11JSON);
-        function pop_Proposednetwork12(feature, layer) {
+        function pop_Corecyclenetwork12(feature, layer) {
         }
 
-        function doStyleProposednetwork12(feature) {
+        function doStyleCorecyclenetwork12(feature) {
         if (feature.properties.n >= 1.0 &&
                 feature.properties.n <= 4.8) {
 
@@ -620,18 +619,17 @@
             }
         }
         }
-        var json_Proposednetwork12JSON = new L.geoJson(json_Proposednetwork12, {
-            onEachFeature: pop_Proposednetwork12,
-            style: doStyleProposednetwork12
+        var json_Corecyclenetwork12JSON = new L.geoJson(json_Corecyclenetwork12, {
+            onEachFeature: pop_Corecyclenetwork12,
+            style: doStyleCorecyclenetwork12
         });
-        layerOrder[layerOrder.length] = json_Proposednetwork12JSON;
-        bounds_group.addLayer(json_Proposednetwork12JSON);
-        feature_group.addLayer(json_Proposednetwork12JSON);
+        layerOrder[layerOrder.length] = json_Corecyclenetwork12JSON;
+        bounds_group.addLayer(json_Corecyclenetwork12JSON);
+        feature_group.addLayer(json_Corecyclenetwork12JSON);
         raster_group.addTo(map);
         feature_group.addTo(map);
-        var baseMaps = {'Thunderforest Cycle': basemap0, 'Thunderforest Transport': basemap1};
-        L.control.layers(baseMaps,{'Proposed network<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Proposednetwork12_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Proposednetwork12_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Proposednetwork12_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Proposednetwork12_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Proposednetwork12_162000200000.png" />  16.2000 - 20.0000 <br />': json_Proposednetwork12JSON,'Popular destinations<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_10800004034000.png" />  108.0000 - 403.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_40340006988000.png" />  403.4000 - 698.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_69880009942000.png" />  698.8000 - 994.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_994200012896000.png" />  994.2000 - 1289.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_1289600015850000.png" />  1289.6000 - 1585.0000 <br />': json_Populardestinations11JSON,'<img src="legend/CurrentBicycleHire10.png" /> Current Bicycle Hire': json_CurrentBicycleHire10JSON,'<img src="legend/CurrenteBicycleHire9.png" /> Current e-Bicycle Hire': json_CurrenteBicycleHire9JSON,'<img src="legend/CycleShops8.png" /> Cycle Shops': json_CycleShops8JSON,'<img src="legend/Busstops7.png" /> Bus stops': json_Busstops7JSON,'<img src="legend/RailwayStations6.png" /> Railway Stations': json_RailwayStations6JSON,'<img src="legend/Hostels5.png" /> Hostels': json_Hostels5JSON,'<img src="legend/Viewpoints4.png" /> Viewpoints': json_Viewpoints4JSON,'<img src="legend/BusNetwork3.png" /> Bus Network': json_BusNetwork3JSON,'Replaceable car journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_14.png" /> 1- 4 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_58.png" /> 5 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_912.png" /> 9 - 12 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1316.png" /> 13 - 16<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1720.png" /> 17 - 20 <br />': json_Replaceablecarjourneys2JSON,'Current cycle journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_12.png" />  1 - 2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_34.png" /> 3 - 4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_56.png" /> 5 - 6 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_78.png" /> 7 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_910.png" /> 9 - 10 <br />': json_Currentcyclejourneys1JSON,'<img src="legend/SouthLakesLocalAuthority0.png" /> South Lakes Local Authority': json_SouthLakesLocalAuthority0JSON,},{collapsed:false}).addTo(map);
-        L.control.scale({options: {position: 'bottomleft', maxWidth: 100, metric: true, imperial: false, updateWhenIdle: false}}).addTo(map);
+        var baseMaps = {'OSM HOT': basemap0, 'Thunderforest Cycle': basemap1};
+        L.control.layers(baseMaps,{'Core cycle network<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_162000200000.png" />  16.2000 - 20.0000 <br />': json_Corecyclenetwork12JSON,'Popular destinations<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_108403.png" />  108 - 403<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_403698.png" />  403 - 698<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_698994.png" />  698 - 994<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_9941289.png" />  994 - 1289 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_12891585.png" />  1289 - 1585<br />': json_Populardestinations11JSON,'<img src="legend/CurrentBicycleHire10.png" /> Current Bicycle Hire': json_CurrentBicycleHire10JSON,'<img src="legend/CurrenteBicycleHire9.png" /> Current e-Bicycle Hire': json_CurrenteBicycleHire9JSON,'<img src="legend/CycleShops8.png" /> Cycle Shops': json_CycleShops8JSON,'<img src="legend/Busstops7.png" /> Bus stops': json_Busstops7JSON,'<img src="legend/RailwayStations6.png" /> Railway Stations': json_RailwayStations6JSON,'<img src="legend/Hostels5.png" /> Hostels': json_Hostels5JSON,'<img src="legend/Viewpoints4.png" /> Viewpoints': json_Viewpoints4JSON,'<img src="legend/BusNetwork3.png" /> Bus Network': json_BusNetwork3JSON,'Replaceable car journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_14.png" /> 1- 4 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_58.png" /> 5 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_912.png" /> 9 - 12 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1316.png" /> 13 - 16<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1720.png" /> 17 - 20 <br />': json_Replaceablecarjourneys2JSON,'Current cycle journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_12.png" />  1 - 2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_34.png" /> 3 - 4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_56.png" /> 5 - 6 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_78.png" /> 7 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_910.png" /> 9 - 10 <br />': json_Currentcyclejourneys1JSON,'<img src="legend/SouthLakesLocalAuthority0.png" /> South Lakes Local Authority': json_SouthLakesLocalAuthority0JSON,},{collapsed:false}).addTo(map);
         stackLayers();
         map.on('overlayadd', restackLayers);
         </script>
