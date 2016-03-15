@@ -21,6 +21,7 @@ o = 0.8
 photo = "photo"
 
 m = leaflet() %>%
+  setView(lng = -2.8745246, lat = 54.3029315, zoom = 10) %>%
   addTiles(urlTemplate = "http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png") %>% 
   addPolylines(data = boundary, color = "blue", opacity = o, group = "Boundary")%>%
   addPolylines(data = bus_net, color = "green", opacity = o, group = "Bus Network")%>%
@@ -35,7 +36,6 @@ m = leaflet() %>%
   addCircleMarkers(data = viewpoints, color = "pink", opacity = o, radius = 3, group = "View points")%>%
   addCircleMarkers(data = hostels, color = "yellow", opacity = o, radius = 3,  group = "Hostels", popup = hostels$name)%>%
   addCircleMarkers(data = photos, color = "darkblue", opacity = o, radius = 3,  group = "Photos")%>%
-  hideGroup ("Boundary")%>%
   hideGroup ("Existing Hire")%>%
   hideGroup ("Bus Stops")%>%
   hideGroup ("E Bike Hire")%>%
@@ -54,5 +54,5 @@ m
 
 
 old = setwd("public_html/") # switch working directory
-htmlwidgets::saveWidget(m, selfcontained = T, file = "map-outline.html")
+htmlwidgets::saveWidget(m, selfcontained = T, file = "rleaflet.html")
 setwd(old) # back to old
