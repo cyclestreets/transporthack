@@ -18,7 +18,7 @@ hostels = geojson_read("geodata/hostels.geojson", what = "sp")
 
 o = 0.8
 
-m = leaflet() %>%
+map = leaflet() %>%
   setView(lng = -2.8745246, lat = 54.3029315, zoom = 10) %>%
   addTiles(urlTemplate = "http://{s}.tile.thunderforest.com/cycle/{z}/{x}/{y}.png") %>% 
   addPolylines(data = boundary, color = "blue", opacity = o, group = "Boundary")%>%
@@ -52,5 +52,5 @@ m
 
 
 old = setwd("public_html/leaflet") # switch working directory
-htmlwidgets::saveWidget(m, selfcontained = T, file = "rleaflet.html")
+htmlwidgets::saveWidget(map, selfcontained = T, file = "rleaflet.html")
 setwd(old) # back to old
