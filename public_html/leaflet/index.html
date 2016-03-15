@@ -34,12 +34,15 @@
         <script src="data/json_Currentcyclejourneys1.js"></script>
         <script src="data/json_Replaceablecarjourneys2.js"></script>
         <script src="data/json_BusNetwork3.js"></script>
-        <script src="data/json_Busstops4.js"></script>
-        <script src="data/json_CycleShops5.js"></script>
-        <script src="data/json_CurrenteBicycleHire6.js"></script>
-        <script src="data/json_CurrentBicycleHire7.js"></script>
-        <script src="data/json_Populardestinations8.js"></script>
-        <script src="data/json_Corecyclenetwork9.js"></script>
+        <script src="data/json_Viewpoints4.js"></script>
+        <script src="data/json_Hostels5.js"></script>
+        <script src="data/json_RailwayStations6.js"></script>
+        <script src="data/json_Busstops7.js"></script>
+        <script src="data/json_CycleShops8.js"></script>
+        <script src="data/json_CurrenteBicycleHire9.js"></script>
+        <script src="data/json_CurrentBicycleHire10.js"></script>
+        <script src="data/json_Populardestinations11.js"></script>
+        <script src="data/json_Corecyclenetwork12.js"></script>
         <script>
         L.ImageOverlay.include({
             getBounds: function () {
@@ -265,10 +268,95 @@
         layerOrder[layerOrder.length] = json_BusNetwork3JSON;
         bounds_group.addLayer(json_BusNetwork3JSON);
         feature_group.addLayer(json_BusNetwork3JSON);
-        function pop_Busstops4(feature, layer) {
+        function pop_Viewpoints4(feature, layer) {
         }
 
-        function doStyleBusstops4() {
+        function doStyleViewpoints4() {
+            return {
+                radius: 4.0,
+                fillColor: '#a6cee3',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerViewpoints4(feature, latlng) {
+            return L.circleMarker(latlng, doStyleViewpoints4())
+        }
+        var json_Viewpoints4JSON = new L.geoJson(json_Viewpoints4, {
+            onEachFeature: pop_Viewpoints4, 
+            pointToLayer: doPointToLayerViewpoints4
+            });
+        layerOrder[layerOrder.length] = json_Viewpoints4JSON;
+
+        bounds_group.addLayer(json_Viewpoints4JSON);
+        feature_group.addLayer(json_Viewpoints4JSON);
+        function pop_Hostels5(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStyleHostels5() {
+            return {
+                radius: 4.0,
+                fillColor: '#1526e3',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerHostels5(feature, latlng) {
+            return L.circleMarker(latlng, doStyleHostels5())
+        }
+        var json_Hostels5JSON = new L.geoJson(json_Hostels5, {
+            onEachFeature: pop_Hostels5, 
+            pointToLayer: doPointToLayerHostels5
+            });
+        layerOrder[layerOrder.length] = json_Hostels5JSON;
+
+        bounds_group.addLayer(json_Hostels5JSON);
+        feature_group.addLayer(json_Hostels5JSON);
+        function pop_RailwayStations6(feature, layer) {
+            var popupContent = '<table><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr></table>';
+            layer.bindPopup(popupContent);
+        }
+
+        function doStyleRailwayStations6() {
+            return {
+                radius: 4.0,
+                fillColor: '#000000',
+                color: '#000000',
+                weight: 0.0,
+                opacity: 1.0,
+                dashArray: '',
+                lineCap: 'butt',
+                lineJoin: 'miter',
+                fillOpacity: 1.0
+            }
+        }
+        function doPointToLayerRailwayStations6(feature, latlng) {
+            return L.circleMarker(latlng, doStyleRailwayStations6())
+        }
+        var json_RailwayStations6JSON = new L.geoJson(json_RailwayStations6, {
+            onEachFeature: pop_RailwayStations6, 
+            pointToLayer: doPointToLayerRailwayStations6
+            });
+        layerOrder[layerOrder.length] = json_RailwayStations6JSON;
+
+        bounds_group.addLayer(json_RailwayStations6JSON);
+        feature_group.addLayer(json_RailwayStations6JSON);
+        function pop_Busstops7(feature, layer) {
+        }
+
+        function doStyleBusstops7() {
             return {
                 radius: 4.0,
                 fillColor: '#33a02c',
@@ -281,23 +369,23 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayerBusstops4(feature, latlng) {
-            return L.circleMarker(latlng, doStyleBusstops4())
+        function doPointToLayerBusstops7(feature, latlng) {
+            return L.circleMarker(latlng, doStyleBusstops7())
         }
-        var json_Busstops4JSON = new L.geoJson(json_Busstops4, {
-            onEachFeature: pop_Busstops4, 
-            pointToLayer: doPointToLayerBusstops4
+        var json_Busstops7JSON = new L.geoJson(json_Busstops7, {
+            onEachFeature: pop_Busstops7, 
+            pointToLayer: doPointToLayerBusstops7
             });
-        layerOrder[layerOrder.length] = json_Busstops4JSON;
+        layerOrder[layerOrder.length] = json_Busstops7JSON;
 
-        bounds_group.addLayer(json_Busstops4JSON);
-        feature_group.addLayer(json_Busstops4JSON);
-        function pop_CycleShops5(feature, layer) {
+        bounds_group.addLayer(json_Busstops7JSON);
+        feature_group.addLayer(json_Busstops7JSON);
+        function pop_CycleShops8(feature, layer) {
             var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr><tr><th scope="row">id</th><td>' + (feature.properties['id'] !== null ? Autolinker.link(String(feature.properties['id'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStyleCycleShops5() {
+        function doStyleCycleShops8() {
             return {
                 radius: 4.0,
                 fillColor: '#fb9a99',
@@ -310,23 +398,23 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayerCycleShops5(feature, latlng) {
-            return L.circleMarker(latlng, doStyleCycleShops5())
+        function doPointToLayerCycleShops8(feature, latlng) {
+            return L.circleMarker(latlng, doStyleCycleShops8())
         }
-        var json_CycleShops5JSON = new L.geoJson(json_CycleShops5, {
-            onEachFeature: pop_CycleShops5, 
-            pointToLayer: doPointToLayerCycleShops5
+        var json_CycleShops8JSON = new L.geoJson(json_CycleShops8, {
+            onEachFeature: pop_CycleShops8, 
+            pointToLayer: doPointToLayerCycleShops8
             });
-        layerOrder[layerOrder.length] = json_CycleShops5JSON;
+        layerOrder[layerOrder.length] = json_CycleShops8JSON;
 
-        bounds_group.addLayer(json_CycleShops5JSON);
-        feature_group.addLayer(json_CycleShops5JSON);
-        function pop_CurrenteBicycleHire6(feature, layer) {
+        bounds_group.addLayer(json_CycleShops8JSON);
+        feature_group.addLayer(json_CycleShops8JSON);
+        function pop_CurrenteBicycleHire9(feature, layer) {
             var popupContent = '<table><tr><th scope="row">description</th><td>' + (feature.properties['description'] !== null ? Autolinker.link(String(feature.properties['description'])) : '') + '</td></tr><tr><th scope="row">latitude</th><td>' + (feature.properties['latitude'] !== null ? Autolinker.link(String(feature.properties['latitude'])) : '') + '</td></tr><tr><th scope="row">longitude</th><td>' + (feature.properties['longitude'] !== null ? Autolinker.link(String(feature.properties['longitude'])) : '') + '</td></tr><tr><th scope="row">4</th><td>' + (feature.properties['4'] !== null ? Autolinker.link(String(feature.properties['4'])) : '') + '</td></tr><tr><th scope="row">hirePoint</th><td>' + (feature.properties['hirePoint'] !== null ? Autolinker.link(String(feature.properties['hirePoint'])) : '') + '</td></tr><tr><th scope="row">chargePoint</th><td>' + (feature.properties['chargePoint'] !== null ? Autolinker.link(String(feature.properties['chargePoint'])) : '') + '</td></tr><tr><th scope="row">accommodation</th><td>' + (feature.properties['accommodation'] !== null ? Autolinker.link(String(feature.properties['accommodation'])) : '') + '</td></tr><tr><th scope="row">foodAndDrink</th><td>' + (feature.properties['foodAndDrink'] !== null ? Autolinker.link(String(feature.properties['foodAndDrink'])) : '') + '</td></tr><tr><th scope="row">place</th><td>' + (feature.properties['place'] !== null ? Autolinker.link(String(feature.properties['place'])) : '') + '</td></tr><tr><th scope="row">numberElectricBikes</th><td>' + (feature.properties['numberElectricBikes'] !== null ? Autolinker.link(String(feature.properties['numberElectricBikes'])) : '') + '</td></tr><tr><th scope="row">regularBikes</th><td>' + (feature.properties['regularBikes'] !== null ? Autolinker.link(String(feature.properties['regularBikes'])) : '') + '</td></tr><tr><th scope="row">url</th><td>' + (feature.properties['url'] !== null ? Autolinker.link(String(feature.properties['url'])) : '') + '</td></tr><tr><th scope="row">image</th><td>' + (feature.properties['image'] !== null ? Autolinker.link(String(feature.properties['image'])) : '') + '</td></tr><tr><th scope="row">address</th><td>' + (feature.properties['address'] !== null ? Autolinker.link(String(feature.properties['address'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStyleCurrenteBicycleHire6() {
+        function doStyleCurrenteBicycleHire9() {
             return {
                 radius: 4.0,
                 fillColor: '#e31a1c',
@@ -339,23 +427,23 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayerCurrenteBicycleHire6(feature, latlng) {
-            return L.circleMarker(latlng, doStyleCurrenteBicycleHire6())
+        function doPointToLayerCurrenteBicycleHire9(feature, latlng) {
+            return L.circleMarker(latlng, doStyleCurrenteBicycleHire9())
         }
-        var json_CurrenteBicycleHire6JSON = new L.geoJson(json_CurrenteBicycleHire6, {
-            onEachFeature: pop_CurrenteBicycleHire6, 
-            pointToLayer: doPointToLayerCurrenteBicycleHire6
+        var json_CurrenteBicycleHire9JSON = new L.geoJson(json_CurrenteBicycleHire9, {
+            onEachFeature: pop_CurrenteBicycleHire9, 
+            pointToLayer: doPointToLayerCurrenteBicycleHire9
             });
-        layerOrder[layerOrder.length] = json_CurrenteBicycleHire6JSON;
+        layerOrder[layerOrder.length] = json_CurrenteBicycleHire9JSON;
 
-        bounds_group.addLayer(json_CurrenteBicycleHire6JSON);
-        feature_group.addLayer(json_CurrenteBicycleHire6JSON);
-        function pop_CurrentBicycleHire7(feature, layer) {
+        bounds_group.addLayer(json_CurrenteBicycleHire9JSON);
+        feature_group.addLayer(json_CurrenteBicycleHire9JSON);
+        function pop_CurrentBicycleHire10(feature, layer) {
             var popupContent = '<table><tr><th scope="row">website</th><td>' + (feature.properties['website'] !== null ? Autolinker.link(String(feature.properties['website'])) : '') + '</td></tr><tr><th scope="row">name</th><td>' + (feature.properties['name'] !== null ? Autolinker.link(String(feature.properties['name'])) : '') + '</td></tr><tr><th scope="row">osmTags</th><td>' + (feature.properties['osmTags'] !== null ? Autolinker.link(String(feature.properties['osmTags'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStyleCurrentBicycleHire7() {
+        function doStyleCurrentBicycleHire10() {
             return {
                 radius: 4.0,
                 fillColor: '#ff7f00',
@@ -368,23 +456,23 @@
                 fillOpacity: 1.0
             }
         }
-        function doPointToLayerCurrentBicycleHire7(feature, latlng) {
-            return L.circleMarker(latlng, doStyleCurrentBicycleHire7())
+        function doPointToLayerCurrentBicycleHire10(feature, latlng) {
+            return L.circleMarker(latlng, doStyleCurrentBicycleHire10())
         }
-        var json_CurrentBicycleHire7JSON = new L.geoJson(json_CurrentBicycleHire7, {
-            onEachFeature: pop_CurrentBicycleHire7, 
-            pointToLayer: doPointToLayerCurrentBicycleHire7
+        var json_CurrentBicycleHire10JSON = new L.geoJson(json_CurrentBicycleHire10, {
+            onEachFeature: pop_CurrentBicycleHire10, 
+            pointToLayer: doPointToLayerCurrentBicycleHire10
             });
-        layerOrder[layerOrder.length] = json_CurrentBicycleHire7JSON;
+        layerOrder[layerOrder.length] = json_CurrentBicycleHire10JSON;
 
-        bounds_group.addLayer(json_CurrentBicycleHire7JSON);
-        feature_group.addLayer(json_CurrentBicycleHire7JSON);
-        function pop_Populardestinations8(feature, layer) {
+        bounds_group.addLayer(json_CurrentBicycleHire10JSON);
+        feature_group.addLayer(json_CurrentBicycleHire10JSON);
+        function pop_Populardestinations11(feature, layer) {
             var popupContent = '<table><tr><th scope="row">Name</th><td>' + (feature.properties['Name'] !== null ? Autolinker.link(String(feature.properties['Name'])) : '') + '</td></tr><tr><th scope="row">lon</th><td>' + (feature.properties['lon'] !== null ? Autolinker.link(String(feature.properties['lon'])) : '') + '</td></tr><tr><th scope="row">lat</th><td>' + (feature.properties['lat'] !== null ? Autolinker.link(String(feature.properties['lat'])) : '') + '</td></tr><tr><th scope="row">Arrivals</th><td>' + (feature.properties['Arrivals'] !== null ? Autolinker.link(String(feature.properties['Arrivals'])) : '') + '</td></tr></table>';
             layer.bindPopup(popupContent);
         }
 
-        function doStylePopulardestinations8(feature) {
+        function doStylePopulardestinations11(feature) {
         if (feature.properties.Arrivals >= 108.0 &&
                 feature.properties.Arrivals <= 403.4) {
 
@@ -456,20 +544,20 @@
         }
 
         }
-        var json_Populardestinations8JSON = new L.geoJson(json_Populardestinations8, {
-            onEachFeature: pop_Populardestinations8,
+        var json_Populardestinations11JSON = new L.geoJson(json_Populardestinations11, {
+            onEachFeature: pop_Populardestinations11,
             pointToLayer: function (feature, latlng) {
-                return L.circleMarker(latlng, doStylePopulardestinations8(feature))
+                return L.circleMarker(latlng, doStylePopulardestinations11(feature))
             }
         });
-        layerOrder[layerOrder.length] = json_Populardestinations8JSON;
+        layerOrder[layerOrder.length] = json_Populardestinations11JSON;
 
-        bounds_group.addLayer(json_Populardestinations8JSON);
-        feature_group.addLayer(json_Populardestinations8JSON);
-        function pop_Corecyclenetwork9(feature, layer) {
+        bounds_group.addLayer(json_Populardestinations11JSON);
+        feature_group.addLayer(json_Populardestinations11JSON);
+        function pop_Corecyclenetwork12(feature, layer) {
         }
 
-        function doStyleCorecyclenetwork9(feature) {
+        function doStyleCorecyclenetwork12(feature) {
         if (feature.properties.n >= 1.0 &&
                 feature.properties.n <= 4.8) {
 
@@ -531,17 +619,17 @@
             }
         }
         }
-        var json_Corecyclenetwork9JSON = new L.geoJson(json_Corecyclenetwork9, {
-            onEachFeature: pop_Corecyclenetwork9,
-            style: doStyleCorecyclenetwork9
+        var json_Corecyclenetwork12JSON = new L.geoJson(json_Corecyclenetwork12, {
+            onEachFeature: pop_Corecyclenetwork12,
+            style: doStyleCorecyclenetwork12
         });
-        layerOrder[layerOrder.length] = json_Corecyclenetwork9JSON;
-        bounds_group.addLayer(json_Corecyclenetwork9JSON);
-        feature_group.addLayer(json_Corecyclenetwork9JSON);
+        layerOrder[layerOrder.length] = json_Corecyclenetwork12JSON;
+        bounds_group.addLayer(json_Corecyclenetwork12JSON);
+        feature_group.addLayer(json_Corecyclenetwork12JSON);
         raster_group.addTo(map);
         feature_group.addTo(map);
         var baseMaps = {'OSM HOT': basemap0, 'Thunderforest Cycle': basemap1};
-        L.control.layers(baseMaps,{'Core cycle network<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork9_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork9_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork9_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork9_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork9_162000200000.png" />  16.2000 - 20.0000 <br />': json_Corecyclenetwork9JSON,'Popular destinations<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations8_108403.png" />  108 - 403<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations8_403698.png" />  403 - 698<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations8_698994.png" />  698 - 994<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations8_9941289.png" />  994 - 1289 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations8_12891585.png" />  1289 - 1585<br />': json_Populardestinations8JSON,'<img src="legend/CurrentBicycleHire7.png" /> Current Bicycle Hire': json_CurrentBicycleHire7JSON,'<img src="legend/CurrenteBicycleHire6.png" /> Current e-Bicycle Hire': json_CurrenteBicycleHire6JSON,'<img src="legend/CycleShops5.png" /> Cycle Shops': json_CycleShops5JSON,'<img src="legend/Busstops4.png" /> Bus stops': json_Busstops4JSON,'<img src="legend/BusNetwork3.png" /> Bus Network': json_BusNetwork3JSON,'Replaceable car journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_14.png" /> 1- 4 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_58.png" /> 5 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_912.png" /> 9 - 12 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1316.png" /> 13 - 16<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1720.png" /> 17 - 20 <br />': json_Replaceablecarjourneys2JSON,'Current cycle journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_12.png" />  1 - 2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_34.png" /> 3 - 4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_56.png" /> 5 - 6 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_78.png" /> 7 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_910.png" /> 9 - 10 <br />': json_Currentcyclejourneys1JSON,'<img src="legend/SouthLakesLocalAuthority0.png" /> South Lakes Local Authority': json_SouthLakesLocalAuthority0JSON,},{collapsed:false}).addTo(map);
+        L.control.layers(baseMaps,{'Core cycle network<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_1000048000.png" />  1.0000 - 4.8000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_4800086000.png" />  4.8000 - 8.6000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_86000124000.png" />  8.6000 - 12.4000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_124000162000.png" />  12.4000 - 16.2000 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Corecyclenetwork12_162000200000.png" />  16.2000 - 20.0000 <br />': json_Corecyclenetwork12JSON,'Popular destinations<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_108403.png" />  108 - 403<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_403698.png" />  403 - 698<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_698994.png" />  698 - 994<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_9941289.png" />  994 - 1289 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Populardestinations11_12891585.png" />  1289 - 1585<br />': json_Populardestinations11JSON,'<img src="legend/CurrentBicycleHire10.png" /> Current Bicycle Hire': json_CurrentBicycleHire10JSON,'<img src="legend/CurrenteBicycleHire9.png" /> Current e-Bicycle Hire': json_CurrenteBicycleHire9JSON,'<img src="legend/CycleShops8.png" /> Cycle Shops': json_CycleShops8JSON,'<img src="legend/Busstops7.png" /> Bus stops': json_Busstops7JSON,'<img src="legend/RailwayStations6.png" /> Railway Stations': json_RailwayStations6JSON,'<img src="legend/Hostels5.png" /> Hostels': json_Hostels5JSON,'<img src="legend/Viewpoints4.png" /> Viewpoints': json_Viewpoints4JSON,'<img src="legend/BusNetwork3.png" /> Bus Network': json_BusNetwork3JSON,'Replaceable car journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_14.png" /> 1- 4 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_58.png" /> 5 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_912.png" /> 9 - 12 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1316.png" /> 13 - 16<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Replaceablecarjourneys2_1720.png" /> 17 - 20 <br />': json_Replaceablecarjourneys2JSON,'Current cycle journeys<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_12.png" />  1 - 2<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_34.png" /> 3 - 4<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_56.png" /> 5 - 6 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_78.png" /> 7 - 8 <br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src="legend/Currentcyclejourneys1_910.png" /> 9 - 10 <br />': json_Currentcyclejourneys1JSON,'<img src="legend/SouthLakesLocalAuthority0.png" /> South Lakes Local Authority': json_SouthLakesLocalAuthority0JSON,},{collapsed:false}).addTo(map);
         stackLayers();
         map.on('overlayadd', restackLayers);
         </script>
