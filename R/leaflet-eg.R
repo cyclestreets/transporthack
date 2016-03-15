@@ -51,6 +51,6 @@ m
 
 
 
-old = setwd("public_html/") # switch working directory
+old = setwd("public_html/leaflet") # switch working directory
 htmlwidgets::saveWidget(m, selfcontained = T, file = "rleaflet.html")
 setwd(old) # back to old
