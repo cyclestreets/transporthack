@@ -47,10 +47,17 @@ map = leaflet() %>%
       overlayGroups = c("Boundary","Bus Stops","Bus Network","Rail station","Existing Hire","E Bike Hire","View points","Hostels","Photos"),
       options = layersControlOptions(collapsed = TRUE)
   )
-m
+map
 
 
 
 old = setwd("public_html/leaflet") # switch working directory
-htmlwidgets::saveWidget(map, selfcontained = T, file = "rleaflet.html")
+htmlwidgets::saveWidget(map, file = "index.html", 
+                        selfcontained = FALSE)
+text = readLines("index.html")
+widget_id = text[15]
+text = gsub(pattern = "htmlwidget-[0-9]+", "map", text)
+
+text[11] = "<script src='../js/journeyplanner.js'></script>"
+writeLines(text, "index.html")
 setwd(old) # back to old

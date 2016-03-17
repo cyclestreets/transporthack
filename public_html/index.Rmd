@@ -10,6 +10,9 @@ output:
 ---
 
 <!--Don't edit the html page directly - use (R)Markdown!-->
+
+<script src="../js/journeyplanner.js"></script>
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
