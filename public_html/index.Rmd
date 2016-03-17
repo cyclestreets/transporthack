@@ -11,8 +11,6 @@ output:
 
 <!--Don't edit the html page directly - use (R)Markdown!-->
 
-<script src="../js/journeyplanner.js"></script>
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -23,11 +21,11 @@ Here's our overview map of the proposal:
 
 <iframe src="leaflet/index.html" width="100%" height="600"></iframe>
 
-The main elements of the plan, and service we will provide if this is funded, are:
+The main elements of the plan include:
 
 - A network of cycle hire points that will build on the emerging cycle rental industry in the area and nationally, led by organisations such as [BikePlus](http://www.carplus.org.uk/projects/bikeplus/)
 - Provision of digital tools to assist wayfinding and transport information to visitors
 - Tools for transport planners to help development and management of the network
 
 
-This represent a comprehensive suite of measures to reduce barriers to cycling in the Lake District, main element of which is the bike hire network. 
+This represent a comprehensive suite of measures to reduce barriers to cycling in the Lake District, main element of which is the bike hire network. See the [evidence base page](evidence-base.html) for more information on the data behind this plan.
