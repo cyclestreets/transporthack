@@ -24,7 +24,9 @@ Here you can find some of the outputs for the CycleStreets.net team for the
 
 - A [map of the most common car journeys](map-car-od.html) into the Lake District based on processing the same dataset.
 
+The routes that are currently popular for cycling routes, based on the origin-destination data, are represented below.
 
+<iframe src="map-cyclenet.html" width="100%" height="600"></iframe>
 
 ## Figures and code
 

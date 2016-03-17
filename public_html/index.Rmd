@@ -1,11 +1,12 @@
 ---
-title: "CycleStreets.net Transport Hack"
+title: "Lake District Bike Network proposal"
 author: "CycleStreets.net Transport Hack Team"
-date: "March 12, 2016"
+date: "March 17, 2016"
 output:
   html_document:
     includes:
       in_header: header.html
+    self_contained: no
 ---
 
 <!--Don't edit the html page directly - use (R)Markdown!-->
@@ -13,57 +14,17 @@ output:
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# Welcome to the CycleStreets.net Transport Hack
+This site describes a plan to develop and provide services for a Lake District Bike Network (LDBN). Our research and analysis has identified a series of interventions in the area, including a bicycle hire network, that will reduce congestion and greatly enhance opportunities for outdoor tourism and leisure.
 
-An (interactive) image can tell 1000 words, so let's start with that. Here's our overview map of the proposal:
+Here's our overview map of the proposal:
 
 <iframe src="leaflet/index.html" width="100%" height="600"></iframe>
 
-All the code and data behind this hack is open access, and can be found on the team's [GitHub repo](https://github.com/cyclestreets/transporthack). If you have a GitHub account, feel free to fork/contribute to the project, for example by [editing this frontpage](https://github.com/cyclestreets/transporthack/edit/master/public_html/index.Rmd)!
+The main elements of the plan, and service we will provide if this is funded, are:
 
-Here you can find some of the outputs for the CycleStreets.net team for the
-[TransportHack](http://www.landor.co.uk/smartertravel/2016/hackathon.php) event.
-
-- A [map of likely routes](map-cyclenet.html) that cyclists represented in the Lake District [origin-destination dataset](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv) took while visiting the area. 
-
-- A [map of the most common car journeys](map-car-od.html) into the Lake District based on processing the same dataset.
+- A network of cycle hire points that will build on the emerging cycle rental industry in the area and nationally, led by organisations such as [BikePlus](http://www.carplus.org.uk/projects/bikeplus/)
+- Provision of digital tools to assist wayfinding and transport information to visitors
+- Tools for transport planners to help development and management of the network
 
 
-
-## Figures and code
-
-A picture can tell a story of a thousand words. The figures and code snippets showed below help show what we've been up to!
-
-A key challenge was to process the origin-destination dataset of visitor travel demand so it could be displayed in a meaningful way on a map. The first stage was to extract the data from the proprietary .xls format and put it into an open source software friendly [csv file, which also displays natively on GitHub](https://github.com/cyclestreets/transporthack/blob/master/data/od-summary.csv). This was done with the following code:
-
-```{r, eval=FALSE}
-f = "data/LD%20origin-destination%20summary.xls"
-odf = readxl::read_excel(f)
-write.csv(odf, "data/od-summary.csv")
-```
-
-A sample of this data is provided below:
-
-```{r, echo=FALSE}
-odf = read.csv("../data/od-summary.csv")
-knitr::kable(odf[2:5, c(3, 4, 5, 13)], row.names = F, caption = "Sample data from the Lake District visitor demand survey")
-```
-
-Then we used the open source transport planning add-on to R, [**stplanr**](http://www.r-bloggers.com/stplanr-0-1-1/), to convert the flows into the formal `SpatialLinesDataFrame` class. This work was done in the [flowgen.R](https://github.com/cyclestreets/transporthack/blob/master/R/flowgen.R) script file:
-
-```{r, eval=FALSE}
-cents = spTransform(cents, CRS("+init=epsg:4326"))
-f = od2line(odf, cents)
-```
-
-Google was used to geocode the place names, which were not provided.
-
-A snapshot of the kind of visualisation provided by this is illustrated below.
-
-```{r, echo=FALSE}
-knitr::include_graphics("figures/map-car-od.png")
-```
-
-
-
-
+This represent a comprehensive suite of measures to reduce barriers to cycling in the Lake District, main element of which is the bike hire network. 
